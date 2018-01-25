@@ -2957,11 +2957,21 @@
 			color: rgba(255, 255, 255, 0.55);
 			margin-bottom: 1.75em;
 		}
+		
+		#banner img {
+			height: 51px;
+			width: 540px;
+		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 
 			#banner {
 				background-attachment: scroll;
+			}
+		
+			#banner img {
+				height: 35px;
+				width: 366px;
 			}
 
 		}
@@ -2995,6 +3005,11 @@
 				#banner p {
 					font-size: .9em;
 				}
+		
+			#banner img {
+				height: 35px;
+				width: 366px;
+			}
 
 		}
 
@@ -3002,6 +3017,11 @@
 
 			#banner {
 				padding: 6em 1.5em 4em 1.5em;
+			}
+		
+			#banner img {
+				height: 20px;
+				width: 209px;
 			}
 
 		}
