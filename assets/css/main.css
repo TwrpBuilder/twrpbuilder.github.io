@@ -2961,6 +2961,13 @@
 		#banner img {
 			height: 51px;
 			width: 540px;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			-webkit-user-drag: none;
+			user-drag: none;
+			-webkit-touch-callout: none;
 		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -2972,6 +2979,13 @@
 			#banner img {
 				height: 35px;
 				width: 366px;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				-webkit-user-drag: none;
+				user-drag: none;
+				-webkit-touch-callout: none;
 			}
 
 		}
@@ -3009,6 +3023,13 @@
 			#banner img {
 				height: 35px;
 				width: 366px;
+				-moz-user-select: none;
+				-webkit-user-select: none;
+				-ms-user-select: none;
+				user-select: none;
+				-webkit-user-drag: none;
+				user-drag: none;
+				-webkit-touch-callout: none;
 			}
 
 		}
