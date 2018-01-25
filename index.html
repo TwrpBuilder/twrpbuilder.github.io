@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>TWRP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="logo">Home</a>
+					<nav id="nav">
+						<a href="index.html">Home</a>
+						<a href="elements.html">Downloads</a>
+                        <a href="login.html">Login</a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+        
+
+		<!-- Banner -->
+			<section id="banner">
+				<h1>TWRP Builder</h1>
+				<p>Official site of TWRP Builder</p>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3">
+						<article>
+							<header>
+								<h3>Check our GitHub repo</h3>
+							</header>
+							<p>The source code is open source now.</p>
+							<footer>
+								<a href="https://github.com/TwrpBuilder/TwrpBuilder" class="button special">Visit</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>Check our thread on XDA</h3>
+							</header>
+							<p>Have any question? Ask us on XDA</p>
+							<footer>
+								<a href="http://forum.xda-developers.com/android/apps-games/twrp-builder-t3501992" class="button special">Visit</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>Download the app</h3>
+							</header>
+							<p>Need the app? Get it now</p>
+							<footer>
+									<script>
+											function GetLatestReleaseInfo() {
+				  $.getJSON("https://api.github.com/repos/TwrpBuilder/TwrpBuilder/releases/latest").done(function(release) {
+					var asset = release.assets[0];
+					document.getElementById("download").setAttribute("href", asset.browser_download_url); 
+				  });
+				}
+				
+				GetLatestReleaseInfo();
+				
+											</script>
+								<a id="download" class="button special">Download</a>
+							</footer>
+					</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>Contributors</h2>
+						<p>People contributing to the project</p>
+					</header>
+					<div class="flex flex-4">
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic03.jpg" alt="Person 1" />
+							</div>
+							<h3>Sumit Rajdev</h3>
+							<p>Coder</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic04.jpg" alt="Person 2" />
+							</div>
+							<h3>Amit Khairnar</h3>
+							<p>UI Designer</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic03.jpg" alt="Person 3" />
+							</div>
+							<h3>Berkant Korkmaz</h3>
+							<p>UI Designer</p>
+						</div>
+						<div class="box person">
+							<div class="image round">
+								<img src="images/pic04.jpg" alt="Person 4" />
+							</div>
+							<h3>Ethan Yonker</h3>
+							<p>TWRP Owner</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2>About</h2>
+						<p></p>
+					</header>
+					<div class="flex flex-2">
+						<article>
+							<div class="image fit">
+								<img src="images/pic01.png" alt="Pic 01" />
+							</div>
+							<header>
+								<h3>Team Win Recovery Project</h3>
+							</header>
+							<p>Team Win Recovery Project, is an open-source software custom recovery image for Android-based devices.</p>
+							<footer>
+								<a href="https://twrp.me/" class="button special">Official Site</a>
+							</footer>
+						</article>
+						<article>
+							<div class="image fit">
+								<img src="images/pic02.png" alt="Pic 02" />
+							</div>
+							<header>
+								<h3>Check our thread on XDA</h3>
+							</header>
+							<p>Regularly check our thread on XDA to get regular bug fixes and app updates too. </p>
+							<footer>
+								<a href="http://forum.xda-developers.com/android/apps-games/twrp-builder-t3501992" class="button special">Check thread</a>
+							</footer>
+						</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+						</div>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+							<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+							<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
