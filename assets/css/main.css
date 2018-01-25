@@ -2764,7 +2764,7 @@
 			padding: 0 0.75em;
 			color: inherit;
 			text-decoration: none;
-			font-size: .8em;
+			font-size: 1.0em;
 		}
 
 			#header a:hover {
@@ -2934,9 +2934,9 @@
 
 	#banner {
 		padding: 12em 0 10em 0;
-		background-image: url('../../images/banner.png');
+		background-image: url('../../images/banner.jpg');
 		background-size: cover;
-		background-position: top;
+		background-position: center;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
