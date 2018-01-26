@@ -53,7 +53,11 @@
 									<table>
 									
 										<tbody id="table">
-										
+											<tr>
+												<th>Brand</th>
+												<th>Model</th>
+												<th>Download Link</th>
+											</tr>
 										
 											<script>
 												var userDataRef = firebase.database().ref("Builds").orderByKey();
@@ -61,11 +65,12 @@
 										button.innerHTML = "Do Something";
 										
 										userDataRef.once("value").then(function(snapshot) {
+										
 										var content='';
 										content+='<tr>'
 										content+='<th>Brand</th>'
 										content+='<th>Model</th>'
-										content+='<th>Link</th>'
+										content+='<th>Download Link</th>'
 										content+='</tr>'
 										
 										  snapshot.forEach(function(data){
