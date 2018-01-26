@@ -2721,14 +2721,14 @@
 		}
 
 	#header {
+		background: rgba(0,0,0,.7);
 		color: #d4e0ef;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
 		line-height: 3.25em;
-		position: absolute;
+		position: fixed;
 		text-align: right;
-		top: 4em;
 		width: 100%;
 		z-index: 10001;
 	}
