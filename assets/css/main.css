@@ -2953,7 +2953,7 @@
 			margin-bottom: 1.75em;
 		}
 		
-		#banner img {
+		#banner .bannerimg {
 			height: 51px;
 			width: 540px;
 			-moz-user-select: none;
