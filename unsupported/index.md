@@ -1,5 +1,4 @@
 ---
-root: ..
 layout: post
 title: Unsupported devices
 date: 27/01/2018
