@@ -2,6 +2,7 @@
 layout: post
 title: Unsupported devices
 date: 27/01/2018
+update: 27/01/2018
 ---
 
 

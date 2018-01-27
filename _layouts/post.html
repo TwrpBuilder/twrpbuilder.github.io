@@ -18,24 +18,14 @@
 			<script src="/index.js"></script>
 
 		<!-- Header -->
-			<header id="header">
-				<div class="inner">
-					<nav id="nav">
-						<a href="/">Home</a>
-						<a href="/#about">About</a>
-						<a href="/downloads/twrp">TWRP Downloads</a>
-						<!-- <a href="login.html">Login</a> -->
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
-				</div>
-			</header>
+			{%include header.html%}
 
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="inner">
 					<header class="align-center">
 						<h2>{{page.title}}</h2>
-						<p style="float: right">{{page.date}}</p>
+						<p style="float: right"> {%if page.update%} <em>Last updated: {{page.update}}</em> |{%endif%} Created: {{page.date}}</p>
 						
 					</header>
 				<hr class="major" />
@@ -44,18 +34,7 @@
 			</section>
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<div class="flex">
-						<div class="copyright">
-							&copy; TWRP Builder. Design: <a href="https://templated.co">TEMPLATED</a>.
-						</div>
-						<ul class="icons">
-							<li><a href="https://github.com/TWRPBuilder" class="icon fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-					</div>
-				</div>
-			</footer>
+			{%include footer.html%}
 
 		<!-- Scripts -->
 			<script src="/assets/js/jquery.min.js"></script>
