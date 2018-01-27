@@ -23,12 +23,11 @@
 		<!-- Main -->
 			<section id="main" class="wrapper">
 				<div class="inner">
-					<header class="align-center">
+					<header class="align-left">
 						<h2>{{page.title}}</h2>
-						<p style="float: right"> {%if page.update%} <em>Last updated: {{page.update}}</em> |{%endif%} Created: {{page.date}}</p>
+						<p style="float: left"> {%if page.update%} <em>Last updated: {{page.update}}</em> |{%endif%} Created: {{page.date}}</p>
 						
 					</header>
-				<hr class="major" />
 
 				{{content}}
 			</section>
