@@ -1,0 +1,11 @@
+---
+layout: elements
+root: ../..
+---
+	{% for device in site.devices %}
+<tr>
+	<td>{{ device.brand }}</td>
+	<td>{{ device.model }}</td>
+	<td><a href="{{ device.download }}" target="_blank">{{device.download}}</a></td>
+<tr>
+	{% endfor %}
