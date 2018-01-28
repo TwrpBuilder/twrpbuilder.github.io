@@ -3078,6 +3078,10 @@
 		display: none;
 	}
 	
+	#footer .icons iframe {
+		display: none;
+	}
+	
 	#footer .footerLinks .unsupported {
 		color: #bbb;
 		margin-top: -10px;
@@ -3112,6 +3116,10 @@
 	@media screen and (max-width: 980px) {
 		
 		#footer .gitFooter {
+			display: initial;
+		}
+		
+		#footer .icons iframe {
 			display: initial;
 		}
 	}
@@ -3151,7 +3159,12 @@
 			display: initial;
 			margin: 0;
 		}
-	
+		
+		#footer .icons iframe {
+			display: initial;
+			margin: 0;
+		}
+		
 		#footer .footerLinks .unsupported {
 			color: #bbb;
 			position: relative;
