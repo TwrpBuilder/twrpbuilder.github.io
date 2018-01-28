@@ -3085,6 +3085,18 @@
 		margin-left: 100px;
 	}
 	
+	#footer .icons a {
+		color: #bbb;
+		text-decoration: none;
+		transition: color 0.2s ease-in-out;
+	}
+	
+	#footer .icons a:hover {
+		color: #5385c1;
+		text-decoration: none;
+		transition: color 0.2s ease-in-out;
+	}
+	
 	@media screen and (max-width: 980px) {
 		
 		#footer .gitFooter {
