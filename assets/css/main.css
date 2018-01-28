@@ -1632,11 +1632,11 @@
 
 	a {
 		color: #5385c1;
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 		a:hover {
-			text-decoration: none;
+			text-decoration: underline;
 		}
 
 	strong, b {
@@ -3066,8 +3066,9 @@
 		}
 
 			#footer .copyright a:hover {
-				color: #bbb;
-				text-decoration: underline;
+				color: #5385c1;
+				transition: color 0.2s ease-in-out;
+				text-decoration: none;
 			}
 
 	#footer ul.icons li .icon {
@@ -3079,10 +3080,17 @@
 	}
 	
 	#footer .footerLinks .unsupported {
-		color: #5385c1;
+		color: #bbb;
 		position: absolute;
 		margin-top: -10px;
 		margin-left: 100px;
+		transition: color 0.2s ease-in-out;
+	}
+	
+	#footer .footerLinks .unsupported:hover {
+		color: #5385c1;
+		text-decoration: none;
+		transition: color 0.2s ease-in-out;
 	}
 	
 	#footer .icons a {
@@ -3116,6 +3124,7 @@
 			-webkit-order: 2;
 			-ms-order: 2;
 			order: 2;
+			text-decoration: none;
 		}
 
 		#footer ul {
@@ -3139,8 +3148,28 @@
 		}
 	
 		#footer .footerLinks .unsupported {
-			color: #5385c1;
+			color: #bbb;
 			position: relative;
+			margin-left: 0px;
+			transition: color 0.2s ease-in-out;
+		}
+		
+		#footer .footerLinks .unsupported:hover {
+			color: #5385c1;
+			text-decoration: none;
+			transition: color 0.2s ease-in-out;
+		}
+	
+		#footer .icons a {
+			color: #bbb;
+			text-decoration: none;
+			transition: color 0.2s ease-in-out;
+		}
+
+		#footer .icons a:hover {
+			color: #5385c1;
+			text-decoration: none;
+			transition: color 0.2s ease-in-out;
 		}
 
 	}
