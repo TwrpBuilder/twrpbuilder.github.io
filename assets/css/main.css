@@ -1655,7 +1655,6 @@
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
-		margin: 0 0 1em 0;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3057,7 +3056,7 @@
 		color: #bbb;
 		font-size: 0.8em;
 		margin: 0 0 2em 0;
-		padding: 0;
+		padding: 10px 0px;
 	}
 
 		#footer .copyright a {
@@ -3081,7 +3080,6 @@
 	
 	#footer .footerLinks .unsupported {
 		color: #bbb;
-		position: absolute;
 		margin-top: -10px;
 		margin-left: 100px;
 		transition: color 0.2s ease-in-out;
@@ -3105,10 +3103,16 @@
 		transition: color 0.2s ease-in-out;
 	}
 	
+	#footer .icons .info {
+		color: #bbb;
+		text-decoration: none;
+		font-size: 1em;
+	}
+	
 	@media screen and (max-width: 980px) {
 		
 		#footer .gitFooter {
-			display: block;
+			display: initial;
 		}
 	}
 
@@ -3144,7 +3148,8 @@
 		}
 		
 		#footer .gitFooter {
-			display: block;
+			display: initial;
+			margin: 0;
 		}
 	
 		#footer .footerLinks .unsupported {
