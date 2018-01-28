@@ -2,7 +2,9 @@
 layout: post
 title: Unsupported devices
 date: 27/01/2018
-update: 27/01/2018
+update: 28/01/2018
+by: berkantkz
+permalink: unsupported_devices
 ---
 
 
@@ -10,6 +12,5 @@ Even if we are experienced, dealing with devices that we don't own is not so eas
 
 Take a look specifications below.
 
-<ul>
-	<li>MT65xx chipsets</li>
-</ul>
+* MT65xx chipsets
+* Devices having less space than 12 <em>megabytes</em> in recovery partition

@@ -4,6 +4,7 @@ title: TWRP Builder
 description: "Jekyll produced devices list"
 baseurl: ""
 author: berkantkz
+repository: twrpbuilder/twrpbuilder.github.io
 
 collections:
         devices:
