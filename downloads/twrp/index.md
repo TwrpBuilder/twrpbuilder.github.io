@@ -1,23 +1,29 @@
 ---
 layout: post
 title: TWRP Downloads
-update: 27/01/2018
+update: 29/01/2018
 ---
+<em style="color: #bbb">Hint: Use ```CTRL```+```F``` and type your device model/codename</em>
+<style> 
+	p {
+		margin: -2em 0 2em 0;
+	}
+</style>
 <!-- Main -->
 <section id="main" class="wrapper" style="padding: 1em 0">
    <div class="inner">
-      <!-- Elements -->
-      <div class="6u 12u$(medium)">
          <!-- Table -->
          <div class="table-wrapper">
             <table>
                <tbody id="table">
-                  <tr>
-                     <th>Brand</th>
-                     <th>Model</th>
-                     <th>Download Link</th>
-                  </tr>
-                  <script>
+				  <tr>
+					<th>Brand</th>
+					<th>Model</th>
+					<th>Codename</th>
+					<th>Date added/updated</th>
+					<th>Download link</th>
+				  </tr>
+				  <script>
                      var userDataRef = firebase.database().ref("Builds").orderByKey();
                      var button = document.createElement("button");
                      button.innerHTML = "Do Something";
@@ -28,18 +34,24 @@ update: 27/01/2018
                      content+='<tr>'
                      content+='<th>Brand</th>'
                      content+='<th>Model</th>'
-                     content+='<th>Download Link</th>'
+					 content+='<th>Codename</th>'
+					 content+='<th>Date added/updated</th>'
+                     content+='<th>Download link</th>'
                      content+='</tr>'
                      
                      snapshot.forEach(function(data){
                      var val = data.val();
                      var brand=val.Brand;
                      var model=val.Model;
+					 var codename=val.Codename;
+					 var date=val.Date;
                      var url=val.Url;
                       var body = document.getElementsByTagName("body")[0];
                      content+='<tr>'
                      content +='<td>'+brand+'</td>'
                      content +='<td>'+model+'</td>'
+                     content +='<td>'+codename+'</td>'
+					 content +='<td>'+date+'</td>'
                      content+='<td><a href='+url+'> Download </a></td>'
                      content+='</tr>'
                      
@@ -47,17 +59,12 @@ update: 27/01/2018
                      document.getElementById("table").innerHTML = content;
                      });
                   </script>
-				  <div class="load-bar">
-					  <div class="bar"></div>
-					  <div class="bar"></div>
-					  <div class="bar"></div>
-				  </div>
+				  
 				  <style>
 					  .load-bar {
 					  position: relative;
-					  margin-top: 20px;
 					  width: 100%;
-					  height: 6px;
+					  height: 4px;
 					  background-color: #fdba2c;
 					}
 					.bar {
@@ -88,8 +95,12 @@ update: 27/01/2018
 					}
 					</style>
                </tbody>
-            </table>
-         </div>
+            </table>			
+		  <div class="load-bar">
+			  <div class="bar"></div>
+			  <div class="bar"></div>
+			  <div class="bar"></div>
+		  </div>
       </div>
    </div>
 </section>

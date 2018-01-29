@@ -1704,8 +1704,6 @@
 
 	code {
 		background: rgba(144, 144, 144, 0.075);
-		border-radius: 0;
-		border: solid 1px #dbdbdb;
 		font-family: "Courier New", monospace;
 		font-size: 0.9em;
 		margin: 0 0.25em;
@@ -1816,11 +1814,19 @@
 			section.wrapper.style1 h3, article.wrapper.style1 h3 {
 				color: #FFF;
 			}
+			
+		.load-bar {
+			top: -30px;
+		}
 
 		@media screen and (max-width: 980px) {
 
 			section.wrapper, article.wrapper {
 				padding: 2em 0;
+			}
+			
+			.load-bar {
+				top: -32px
 			}
 
 		}
