@@ -17,6 +17,7 @@ update: 29/01/2018
             <table>
                <tbody id="table">
 				  <tr>
+					<th>#</th>
 					<th>Brand</th>
 					<th>Model</th>
 					<th>Codename</th>
@@ -32,6 +33,7 @@ update: 29/01/2018
                      
                      var content='';
                      content+='<tr>'
+					 content+='<th>#</th>'
                      content+='<th>Brand</th>'
                      content+='<th>Model</th>'
 					 content+='<th>Codename</th>'
@@ -41,6 +43,8 @@ update: 29/01/2018
                      
                      snapshot.forEach(function(data){
                      var val = data.val();
+					 
+					 var count="";
                      var brand=val.Brand;
                      var model=val.Model;
 					 var codename=val.Codename;
@@ -48,6 +52,7 @@ update: 29/01/2018
                      var url=val.Url;
                       var body = document.getElementsByTagName("body")[0];
                      content+='<tr>'
+					 content +='<td class="count">'+count+'</td>'
                      content +='<td>'+brand+'</td>'
                      content +='<td>'+model+'</td>'
                      content +='<td>'+codename+'</td>'
@@ -57,6 +62,21 @@ update: 29/01/2018
                      
                      	});
                      document.getElementById("table").innerHTML = content;
+					 
+					 $('.count').each(function(i) {
+						var x = $(this).index()+1;
+						var y = i + 1;
+						$(this).text(x+i);
+						$(this).wrap($('<a>').attr('href','#'+y));
+						$(this).attr('id',x+i);
+					});
+					
+					if (window.location.href.indexOf("#") > -1) {
+						var id = window.location.href[window.location.href.length -1];
+						var item = "#"+id;
+						$(item).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
+						}
+					 
                      });
                   </script>
 				  
