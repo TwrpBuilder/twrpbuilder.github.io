@@ -10,7 +10,7 @@ update: 30/01/2018
 	}
 </style>
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
-<script src="/index.js"></script>
+<script src="/login/index.js"></script>
 <!-- Main -->
 <section id="main" class="wrapper" style="padding: 1em 0">
    <div class="inner">
