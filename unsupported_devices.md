@@ -6,9 +6,9 @@ permalink: unsupported_devices
 ---
 
 
-Even if we are experienced, dealing with devices that we don't own is not so easy. Unfortunately, thus, there are some specific criteria that indicates the devices we cannot support.
+Even if we are experienced, dealing with devices that we don't own isn't so easy. Unfortunately, there are specific criteria that indicates the type of devices we cannot support.
 
-Take a look specifications below.
+Take a look at the criteria for unsupported devices below:
 
 * MT65xx chipsets
 * Devices having less space than 12 <em>megabytes</em> in recovery partition
