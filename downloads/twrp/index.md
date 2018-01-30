@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TWRP Downloads
-update: 29/01/2018
+update: 30/01/2018
 ---
 <em style="color: #bbb">Hint: Use ```CTRL```+```F``` and type your device model/codename</em>
 <style> 
@@ -69,6 +69,11 @@ update: 29/01/2018
 						$(this).text(x+i);
 						$(this).wrap($('<a>').attr('href','#'+y));
 						$(this).attr('id',x+i);
+						
+						$(this).click(function() {
+							$('.count').parent().parent().css({'background-color':''});
+							$(this).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
+						});
 					});
 					
 					if (window.location.href.indexOf("#") > -1) {
