@@ -1,5 +1,17 @@
+<script>
+	var lastPosition = $(window).scrollTop();
+		$(window).scroll(function(event){
+			var currentPosition = $(this).scrollTop();
+			if (currentPosition > lastPosition){
+				$('#header').fadeOut();
+			} else {
+				$('#header').fadeIn();
+			}
+		lastPosition = currentPosition;
+	});
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
 <header id="header">
-	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<div class="inner">
 		<nav id="nav">
 			<a href="/">Home</a>
