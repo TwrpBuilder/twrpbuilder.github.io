@@ -1,11 +1,11 @@
 ---
 layout: post
-title: TWRP Builder Downloads
-lang: en
-permalink: downloads/twrp/
-update: 30/01/2018
+title: TWRP Builder İndirmeleri
+lang: tr
+permalink: tr/downloads/twrp/
+update: 31/01/2018
 ---
-<em style="color: #bbb">Hint: Use ```CTRL```+```F``` and type your device model/codename</em>
+<em style="color: #bbb">İpucu: Tuş takımınızda ```CTRL```+```F``` tuşlarına basın, ardından aygıtınızın modelini/takma adını yazın</em>
 <style> 
 	p {
 		margin: -2em 0 2em 0;
@@ -22,11 +22,11 @@ update: 30/01/2018
                <tbody id="table">
 				  <tr>
 					<th>#</th>
-					<th>Brand</th>
+					<th>Marka</th>
 					<th>Model</th>
-					<th>Codename</th>
-					<th>Date added/updated</th>
-					<th>Download link</th>
+					<th>Takma ad</th>
+					<th>Eklenme/Güncellenme tarihi</th>
+					<th>İndirme bağlantısı</th>
 				  </tr>
 				  <script>
                      var userDataRef = firebase.database().ref("Builds").orderByKey();
@@ -38,11 +38,11 @@ update: 30/01/2018
                      var content='';
                      content+='<tr>'
 					 content+='<th>#</th>'
-                     content+='<th>Brand</th>'
+                     content+='<th>Marka</th>'
                      content+='<th>Model</th>'
-					 content+='<th>Codename</th>'
-					 content+='<th>Date added/updated</th>'
-                     content+='<th>Download link</th>'
+					 content+='<th>Takma ad</th>'
+					 content+='<th>Eklenme/Güncellenme tarihi</th>'
+                     content+='<th>İndirme bağlantısı</th>'
                      content+='</tr>'
                      
                      snapshot.forEach(function(data){

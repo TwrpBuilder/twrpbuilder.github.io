@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Unsupported devices
+lang: en
+permalink: unsupported_devices/
 update: 28/01/2018
-permalink: unsupported_devices
 ---
 
 

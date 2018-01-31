@@ -6,18 +6,21 @@
 				<a class="github-button gitFooter" href="https://github.com/TWRPBuilder/TWRPBuilder" data-icon="octicon-star" data-show-count="true" aria-label="Star TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Star</a>
 				<a class="github-button gitFooter" href="https://github.com/TWRPBuilder/TWRPBuilder/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Fork</a>
 				<br>
-				<li><h4>Follow us:</h4></li>
+				<li><h4>{{ site.t[page.lang].followus }}:</h4></li>
 				<li><a href="https://t.me/twrpbuilder"><i class="fa fa-telegram"></i> <span class="label"></span></a></li>
 				<li><a href="https://github.com/TWRPBuilder"><i class="fa fa-github"></i> <span class="label"></span></a></li>
-				<h4 class="info">{%if page.update%} <em>This page was last updated on {{page.update}} {%endif%} </em></h4>
+				<!-- replace: "xxx","{{page.update}} -->
+				{%if page.update%}<h4 class="info"><em>{{site.t[page.lang].pageupdate"}} {{page.update}}</em></h4>{%endif%}
 			</ul>
-			<br>
 			
 			<div class="copyright">
 				<div class="footerLinks">
-					<br>
-					<a href="/unsupported_devices">Unsupported devices information</a>
-					<h4>&copy; TWRP Builder. Design: <a href="https://templated.co">TEMPLATED</a></h4>.
+					<div class="icons"> <!-- {%assign urlWoLang=={{page.permalink}} | replace: 'tr','' | replace: 'en','' | replace_first: '/','' %} {% unless menu.[0] == 'en' %}{{menu[0]}}{%endunless%} {{urlWoLang}} -->
+						<!-- /{%unless menu[0] == 'en'%}{{menu[0]}}{%endunless%} -->
+						<h4>{{site.t[page.lang].locale}}: {% for menu in site.t %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
+					</div>
+					<a href="{%unless page.lang == "en"%}/{{page.lang}}{%endunless%}/unsupported_devices">{{ site.t[page.lang].unsupporteddevicesinformation}}</a>
+					<h4>&copy; TWRP Builder. {{site.t[page.lang].design"}}: <a href="https://templated.co">TEMPLATED</a></h4>.
 				</div>
 			</div>
 		</div>
