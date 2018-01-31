@@ -27,7 +27,6 @@ t:
         pageupdate: This page was last updated on 
         locale: Locale
         unsupporteddevicesinformation: Unsupported devices informarion
-        design: Design
     tr:
         # header
         home: Ana Sayfa
@@ -39,4 +38,3 @@ t:
         pageupdate: "Bu sayfanın son güncellenme tarihi: "
         locale: Bölge
         unsupporteddevicesinformation: Desteklenmeyen aygıtlar hakkında
-        design: Tasarım

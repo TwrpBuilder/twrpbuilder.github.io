@@ -20,7 +20,7 @@
 						<h4>{{site.t[page.lang].locale}}: {% for menu in site.t %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
 					</div>
 					<a href="{%unless page.lang == "en"%}/{{page.lang}}{%endunless%}/unsupported_devices">{{ site.t[page.lang].unsupporteddevicesinformation}}</a>
-					<h4>&copy; TWRP Builder. {{site.t[page.lang].design"}}: <a href="https://templated.co">TEMPLATED</a></h4>.
+					<h4>&copy; TWRP Builder <em>2018</em></h4>.
 				</div>
 			</div>
 		</div>
