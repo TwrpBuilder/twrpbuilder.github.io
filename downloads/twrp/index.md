@@ -61,7 +61,7 @@ update: 03/02/2018
                      content +='<td>'+model+'</td>'
                      content +='<td>'+codename+'</td>'
 					 content +='<td>'+date+'</td>'
-                     content+='<td><a href='+url+'> Download </a></td>'
+                     content+='<td><a href='+url+' target="_blank"> Download </a></td>'
                      content+='</tr>'
                      
                      	});
