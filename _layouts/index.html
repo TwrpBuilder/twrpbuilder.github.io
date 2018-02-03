@@ -13,10 +13,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="/assets/css/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<script async defer src="https://buttons.github.io/buttons.js"></script>
 		
 		<meta property="og:title" content="{%if page.title %}{{page.title}}{%else%}TWRP Builder{%endif%}" />
-		<meta property="og:description" content="TWRP Builder" />
+		<meta property="og:description" content="{% unless page.title == 'TWRP Builder' %}TWRP Builder{% endunless%}" />
 		<meta property="og:image" content="/assets/images/logo.png" />
 	</head>
 	<body>

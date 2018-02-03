@@ -15,7 +15,7 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		
 		<meta property="og:title" content="{%if page.title %}{{page.title}}{%else%}TWRP Builder{%endif%}" />
-		<meta property="og:description" content="TWRP Builder" />
+		<meta property="og:description" content="{% unless page.title == 'TWRP Builder' %}TWRP Builder{% endunless%}" />
 		<meta property="og:image" content="/assets/images/logo.png" />
 	</head>
 	<body class="subpage">
