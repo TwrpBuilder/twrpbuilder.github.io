@@ -3,7 +3,7 @@ layout: post
 title: TWRP Builder Downloads
 lang: en
 permalink: downloads/twrp/
-update: 30/01/2018
+update: 03/02/2018
 ---
 <em style="color: #bbb">Hint: Use ```CTRL```+```F``` and type your device model/codename</em>
 <style> 
@@ -48,7 +48,7 @@ update: 30/01/2018
                      snapshot.forEach(function(data){
                      var val = data.val();
 					 
-					 var count="";
+				 var count="";
                      var brand=val.brand;
                      var model=val.model;
 					 var codename=val.codeName;
