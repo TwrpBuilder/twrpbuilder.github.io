@@ -49,11 +49,11 @@ update: 30/01/2018
                      var val = data.val();
 					 
 					 var count="";
-                     var brand=val.Brand;
-                     var model=val.Model;
-					 var codename=val.Codename;
-					 var date=val.Date;
-                     var url=val.Url;
+                     var brand=val.brand;
+                     var model=val.model;
+					 var codename=val.codeName;
+					 var date=val.date;
+                     var url=val.url;
                       var body = document.getElementsByTagName("body")[0];
                      content+='<tr>'
 					 content +='<td class="count">'+count+'</td>'
