@@ -6,35 +6,6 @@ baseurl: ""
 author: berkantkz
 repository: twrpbuilder/twrpbuilder.github.io
 
-collections:
-        devices:
-                output: true
-
 # Build settings
 markdown: kramdown
 permalinks: pretty
-
-# Translations
-t:
-    en:
-        # header
-        home: Home
-        about: About
-        downloads: TWRP Builder Downloads
-        
-        # footer
-        followus: Follow us
-        pageupdate: This page was last updated on 
-        locale: Locale
-        unsupporteddevicesinformation: Unsupported devices informarion
-    tr:
-        # header
-        home: Ana Sayfa
-        about: Hakkında
-        downloads: TWRP Builder İndirmeleri
-        
-        # footer
-        followus: Bizi takip edin
-        pageupdate: "Bu sayfanın son güncellenme tarihi: "
-        locale: Bölge
-        unsupporteddevicesinformation: Desteklenmeyen aygıtlar hakkında

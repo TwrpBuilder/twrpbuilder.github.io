@@ -3,13 +3,14 @@ layout: index
 title: TWRP Builder
 lang: tr
 permalink: /tr/
-update: 31/01/2018
+update: 04/02/2018
 ---
+{% assign translate = site.data.translations.lang[page.lang] %}
 <!-- Banner -->
 			<section id="banner">
 				<img style="padding: 0px 0px; display: none"></img><br>
 				<img class="bannerimg" height="51" width="540" src="/assets/images/twrpBuilder_w.png"></img>
-				<p>TWRP Builder Projesinin resmî sitesi.</p>
+				<p>{{translate.slogan}}</p>
 			</section>
 
 		<!-- One -->
@@ -18,27 +19,27 @@ update: 31/01/2018
 					<div class="flex flex-3">
 						<article>
 							<header>
-								<h3>GitHub ambarlarımıza bakın</h3>
+								<h3>{{translate.checkgithub}}</h3>
 							</header>
-							<p>Projemiz açık kaynaklıdır!</p>
+							<p>{{translate.projectos}}</p>
 							<footer>
-								<a href="https://github.com/TwrpBuilder/TwrpBuilder" class="button special">Ziyaret edin</a>
+								<a href="https://github.com/TwrpBuilder/TwrpBuilder" class="button special">{{translate.visit}}</a>
 							</footer>
 						</article>
 						<article>
 							<header>
-								<h3>XDA Developers'daki konumuzu görün</h3>
+								<h3>{{translate.checkxda}}</h3>
 							</header>
-							<p>Sorunuz mu var? XDA'da sorun!</p>
+							<p>{{translate.askonxda}}</p>
 							<footer>
-								<a href="https://forum.xda-developers.com/android/apps-games/twrpbuilder-t3744253" class="button special">Ziyaret edin</a>
+								<a href="https://forum.xda-developers.com/android/apps-games/twrpbuilder-t3744253" class="button special">{{translate.visit}}</a>
 							</footer>
 						</article>
 						<article id="article_download">
 							<header>
-								<h3>Uygulamayı indirin</h3>
+								<h3>{{translate.dlta}}</h3>
 							</header>
-							<p>Son sürüm mü gerekli? Buradan edinin!</p>
+							<p>{{translate.needlatest}}</p>
 							<footer>
 									<script>
 											function GetLatestReleaseInfo() {
@@ -51,7 +52,7 @@ update: 31/01/2018
 				GetLatestReleaseInfo();
 				
 											</script>
-								<a id="download" class="button special">İndirin</a>
+								<a id="download" class="button special">{{translate.download}}</a>
 							</footer>
 					</article>
 					</div>
@@ -62,8 +63,8 @@ update: 31/01/2018
 			<section id="two" class="wrapper style1 special">
 				<div class="inner">
 					<header>
-						<h2>Katılımcılar</h2>
-						<p>Projemize katılan kişiler</p>
+						<h2>{{translate.contributors}}</h2>
+						<p>{{translate.contributingtoproject}}</p>
 					</header>
 					<div class="flex flex-4">
 						<div class="box person">
@@ -71,28 +72,28 @@ update: 31/01/2018
 								<img src="/assets/images/pic03.jpg" alt="Person 1" />
 							</div>
 							<h3>Sumit Rajdev</h3>
-							<p>Yazılımcı</p>
+							<p>Coder</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
 								<img src="/assets/images/pic04.jpg" alt="Person 2" />
 							</div>
 							<h3>Amit Khairnar</h3>
-							<p>Arayüz tasarımcısı</p>
+							<p>UI Designer</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
 								<img src="/assets/images/pic03.jpg" alt="Person 3" />
 							</div>
 							<h3>Berkant Korkmaz</h3>
-							<p>Arayüz tasarımcısı</p>
+							<p>UI Designer</p>
 						</div>
 						<div class="box person">
 							<div class="image round">
 								<img src="/assets/images/pic04.jpg" alt="Person 4" />
 							</div>
 							<h3>Ethan Yonker</h3>
-							<p>TWRP kurucusu</p>
+							<p>TWRP Owner</p>
 						</div>
 					</div>
 				</div>
@@ -102,10 +103,10 @@ update: 31/01/2018
 			<section id="about" class="wrapper special">
 				<div class="inner">
 					<header class="align-center">
-						<h2>Hakkında</h2>
+						<h2>{{translate.about}}</h2>
 						<p></p>
 					</header>
-					<h3>TWRP Builder, henüz hâlâ Team Win Recovery Project (TWRP) desteği bulunmayan aygıtlara TWRP desteği sunmayı hedefler. <br><br> Bu proje ile, o aygıtlar da TWRP desteğini alır! Uygulamayı indirin, bir hesap oluşturun, cihazınızdan gerekli dosyaları sunucumuza yükleyin ve arkanıza yaslanın! TWRP yansımasını hazır duruma getirdiğimiz zaman bilgilendirileceksiniz!</h3>
-					<a href="#article_download">Şimdi indirin!</a>
+					<h3>{{translate.aboutdesc}}</h3>
+					<a href="#article_download">{{translate.dlnow}}</a>
 				</div>
 			</section>

@@ -3,13 +3,14 @@ layout: index
 title: TWRP Builder
 lang: en
 permalink: /
-update: 31/01/2018
+update: 04/02/2018
 ---
+{% assign translate = site.data.translations.lang[page.lang] %}
 <!-- Banner -->
 			<section id="banner">
 				<img style="padding: 0px 0px; display: none"></img><br>
 				<img class="bannerimg" height="51" width="540" src="/assets/images/twrpBuilder_w.png"></img>
-				<p>Official site of the  TWRP Builder Project</p>
+				<p>{{translate.slogan}}</p>
 			</section>
 
 		<!-- One -->
@@ -18,27 +19,27 @@ update: 31/01/2018
 					<div class="flex flex-3">
 						<article>
 							<header>
-								<h3>Check out our GitHub repositories</h3>
+								<h3>{{translate.checkgithub}}</h3>
 							</header>
-							<p>Our project is open-source!</p>
+							<p>{{translate.projectos}}</p>
 							<footer>
-								<a href="https://github.com/TwrpBuilder/TwrpBuilder" class="button special">Visit</a>
+								<a href="https://github.com/TwrpBuilder/TwrpBuilder" class="button special">{{translate.visit}}</a>
 							</footer>
 						</article>
 						<article>
 							<header>
-								<h3>Check out our thread on XDA Developers</h3>
+								<h3>{{translate.checkxda}}</h3>
 							</header>
-							<p>Have any questions? Ask us on XDA!</p>
+							<p>{{translate.askonxda}}</p>
 							<footer>
-								<a href="https://forum.xda-developers.com/android/apps-games/twrpbuilder-t3744253" class="button special">Visit</a>
+								<a href="https://forum.xda-developers.com/android/apps-games/twrpbuilder-t3744253" class="button special">{{translate.visit}}</a>
 							</footer>
 						</article>
 						<article id="article_download">
 							<header>
-								<h3>Download the app</h3>
+								<h3>{{translate.dlta}}</h3>
 							</header>
-							<p>Need the latest version? Get it here!</p>
+							<p>{{translate.needlatest}}</p>
 							<footer>
 									<script>
 											function GetLatestReleaseInfo() {
@@ -51,7 +52,7 @@ update: 31/01/2018
 				GetLatestReleaseInfo();
 				
 											</script>
-								<a id="download" class="button special">Download</a>
+								<a id="download" class="button special">{{translate.download}}</a>
 							</footer>
 					</article>
 					</div>
@@ -62,8 +63,8 @@ update: 31/01/2018
 			<section id="two" class="wrapper style1 special">
 				<div class="inner">
 					<header>
-						<h2>Contributors</h2>
-						<p>People contributing to the project</p>
+						<h2>{{translate.contributors}}</h2>
+						<p>{{translate.contributingtoproject}}</p>
 					</header>
 					<div class="flex flex-4">
 						<div class="box person">
@@ -102,10 +103,10 @@ update: 31/01/2018
 			<section id="about" class="wrapper special">
 				<div class="inner">
 					<header class="align-center">
-						<h2>About</h2>
+						<h2>{{translate.about}}</h2>
 						<p></p>
 					</header>
-					<h3>TWRP Builder is a project that aims at creating Team Win Recovery Project (TWRP) for the devices which don't have their own TWRP support yet. <br><br> With our project, TWRP will be created for your device! Download our app, create an account, upload the neccessary files from your device and keep calm! Once we get the TWRP recovery image ready for your device, you will be notified!</h3>
-					<a href="#article_download">Download now!</a>
+					<h3>{{translate.aboutdesc}}</h3>
+					<a href="#article_download">{{translate.dlnow}}</a>
 				</div>
 			</section>

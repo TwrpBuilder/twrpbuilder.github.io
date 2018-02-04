@@ -1,3 +1,4 @@
+{% assign translate = site.data.translations.lang[page.lang] %}
 <script>
 	var lastPosition = $(window).scrollTop();
 		$(window).scroll(function(event){
@@ -14,9 +15,9 @@
 <header id="header">
 	<div class="inner">
 		<nav id="nav">
-			<a href="{%unless page.lang == 'en'%}/{{page.lang}}{%endunless%}/">{{ site.t[page.lang].home}}</a>
-			<a href="{%unless page.lang == 'en'%}/{{page.lang}}{%endunless%}/#about">{{ site.t[page.lang].about}}</a>
-			<a href="{%unless page.lang == 'en'%}/{{page.lang}}{%endunless%}/downloads/twrp">{{ site.t[page.lang].downloads}}</a>
+			<a href="{%unless page.lang == 'en'%}/{{page.lang}}{%endunless%}/">{{translate.home}}</a>
+			<a href="{%unless page.lang == 'en'%}/{{page.lang}}{%endunless%}/#about">{{translate.about}}</a>
+			<a href="{%unless page.lang == 'en'%}/{{page.lang}}{%endunless%}/downloads/twrp">{{translate.downloads}}</a>
 			<div class="rightHead">
 				<a class="github-button" href="https://github.com/TWRPBuilder/TWRPBuilder" data-icon="octicon-star" data-show-count="true" aria-label="Star TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Star</a>
 				<a class="github-button" href="https://github.com/TWRPBuilder/TWRPBuilder/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Fork</a>

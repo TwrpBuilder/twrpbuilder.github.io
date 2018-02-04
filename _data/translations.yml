@@ -1,0 +1,82 @@
+lang:
+    en:
+        # header
+        home: Home
+        about: About
+        downloads: TWRP Builder Downloads
+        
+        # footer
+        followus: Follow us
+        pageupdate: This page was last updated on 
+        locale: Locale
+        unsupporteddevicesinformation: Unsupported devices informarion
+        
+        slogan: Official site of the  TWRP Builder Project
+        checkgithub: Check out our GitHub repositories
+        projectos: Our project is open-source!
+        visit: Visit
+        checkxda: Check out our thread on XDA Developers
+        askonxda: Have any questions? Ask us on XDA!
+        dlta: Download the app
+        needlatest: Need the latest version? Get it here!
+        download: Download
+        contributors: Contributors
+        contributingtoproject: People contributing to the project
+        about: About
+        aboutdesc: TWRP Builder is a project that aims at creating Team Win Recovery Project (TWRP) for the devices which don't have their own TWRP support yet. <br><br> With our project, TWRP will be created for your device! Download our app, create an account, upload the neccessary files from your device and keep calm! Once we get the TWRP recovery image ready for your device, you will be notified!
+        dlnow: Download now!
+        hint: "Hint: Use ```CTRL```+```F``` and type your device model/codename."
+        brand: Brand
+        model: Model
+        codename: Codename
+        dateadded: Date added/updated
+        downloadlink: Download link
+        clicktoredirect: "<a id='download' class='button special'>Click here</a> to redirect if the link does not work automatically."
+        copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>Go to the home page.</a></em></p>"
+        
+        # 404.md
+        error404: ERROR 404
+        sww: Something went wrong
+        pagenotfound: "The page you're looking for<br> couldn't be found."
+        gth: Go to home?
+    
+    tr:
+        # header
+        home: Ana Sayfa
+        about: Hakkında
+        downloads: TWRP Builder İndirmeleri
+        
+        # footer
+        followus: Bizi takip edin
+        pageupdate: "Bu sayfanın son güncellenme tarihi: "
+        locale: Bölge
+        unsupporteddevicesinformation: Desteklenmeyen aygıtlar hakkında
+
+        slogan: TWRP Builder Projesinin resmî sitesi.
+        checkgithub: GitHub ambarlarımıza bakın
+        projectos: Projemiz açık kaynaklıdır!
+        visit: Ziyaret edin
+        checkxda: XDA Developers'daki konumuzu görün
+        askonxda: Sorunuz mu var? XDA'da sorun!
+        dlta: Uygulamayı indirin
+        needlatest: Son sürüm mü gerekli? Buradan edinin!
+        download: İndirin
+        contributors: Katılımcılar
+        contributingtoproject: Projemize katılan kişiler
+        about: Hakkında
+        aboutdesc: TWRP Builder, henüz hâlâ Team Win Recovery Project (TWRP) desteği bulunmayan aygıtlara TWRP desteği sunmayı hedefler. <br><br> Bu proje ile, o aygıtlar da TWRP desteğini alır! Uygulamayı indirin, bir hesap oluşturun, cihazınızdan gerekli dosyaları sunucumuza yükleyin ve arkanıza yaslanın! TWRP yansımasını hazır duruma getirdiğimiz zaman bilgilendirileceksiniz!
+        dlnow: Hemen indirin!
+        hint: "İpucu: Tuş takımınızda ```CTRL```+```F``` tuşlarına basın, ardından aygıtınızın modelini/takma adını yazın."
+        brand: Marka
+        model: Model
+        codename: Takma ad
+        dateadded: Eklenme/Güncellenme tarihi
+        downloadlink: İndirme bağlantısı
+        clicktoredirect: "Eğer yönlendirme kendiliğinden çalışmazsa, <a id='download'>buraya basın</a>."
+        copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>Ana sayfaya dön.</a></em></p>"
+        
+        # 404.md
+        error404: HATA 404
+        sww: Bir şeyler ters gitti
+        pagenotfound: "Aradığınız sayfa<br> bulunamadı."
+        gth: Ana sayfaya dön?

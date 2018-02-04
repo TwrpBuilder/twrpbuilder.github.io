@@ -1,3 +1,4 @@
+{% assign translate = site.data.translations.lang[page.lang] %}
 <footer id="footer">
 	<div class="inner">
 		<div class="flex">
@@ -6,20 +7,20 @@
 				<a class="github-button gitFooter" href="https://github.com/TWRPBuilder/TWRPBuilder" data-icon="octicon-star" data-show-count="true" aria-label="Star TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Star</a>
 				<a class="github-button gitFooter" href="https://github.com/TWRPBuilder/TWRPBuilder/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Fork</a>
 				<br>
-				<li><h4>{{ site.t[page.lang].followus }}:</h4></li>
+				<li><h4>{{ translate.followus }}:</h4></li>
 				<li><a href="https://t.me/twrpbuilder"><i class="fa fa-telegram"></i> <span class="label"></span></a></li>
 				<li><a href="https://github.com/TWRPBuilder"><i class="fa fa-github"></i> <span class="label"></span></a></li>
 				<!-- replace: "xxx","{{page.update}} -->
-				{%if page.update%}<h4 class="info"><em>{{site.t[page.lang].pageupdate"}} {{page.update}}</em></h4>{%endif%}
+				{%if page.update%}<h4 class="info"><em>{{translate.pageupdate"}} {{page.update}}</em></h4>{%endif%}
 			</ul>
 			
 			<div class="copyright">
 				<div class="footerLinks">
 					<div class="icons"> <!-- {%assign urlWoLang=={{page.permalink}} | replace: 'tr','' | replace: 'en','' | replace_first: '/','' %} {% unless menu.[0] == 'en' %}{{menu[0]}}{%endunless%} {{urlWoLang}} -->
 						<!-- /{%unless menu[0] == 'en'%}{{menu[0]}}{%endunless%} -->
-						<h4>{{site.t[page.lang].locale}}: {% for menu in site.t %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
+						<h4>{{translate.locale}}: {% for menu in site.data.translations.lang %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
 					</div>
-					<a href="{%unless page.lang == "en"%}/{{page.lang}}{%endunless%}/unsupported_devices">{{ site.t[page.lang].unsupporteddevicesinformation}}</a>
+					<a href="{%unless page.lang == "en"%}/{{page.lang}}{%endunless%}/unsupported_devices">{{ translate.unsupporteddevicesinformation}}</a>
 					<h4>&copy; TWRP Builder <em>2018</em></h4>.
 				</div>
 			</div>

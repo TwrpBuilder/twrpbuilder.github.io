@@ -3,9 +3,10 @@ layout: post
 title: TWRP Builder Downloads
 lang: en
 permalink: downloads/twrp/
-update: 03/02/2018
+update: 04/02/2018
 ---
-<em style="color: #bbb">Hint: Use ```CTRL```+```F``` and type your device model/codename</em>
+{% assign translate = site.data.translations.lang[page.lang] %}
+<em style="color: #bbb">{{translate.hint}}</em>
 <style> 
 	p {
 		margin: -2em 0 2em 0;
@@ -22,11 +23,11 @@ update: 03/02/2018
                <tbody id="table">
 				  <tr>
 					<th>#</th>
-					<th>Brand</th>
-					<th>Model</th>
-					<th>Codename</th>
-					<th>Date added/updated</th>
-					<th>Download link</th>
+					<th>{{translate.brand}}</th>
+					<th>{{translate.model}}</th>
+					<th>{{translate.codename}}</th>
+					<th>{{translate.dateadded}}</th>
+					<th>{{translate.downloadlink}}</th>
 				  </tr>
 				  <script>
                      var userDataRef = firebase.database().ref("Builds").orderByKey();
@@ -38,11 +39,11 @@ update: 03/02/2018
                      var content='';
                      content+='<tr>'
 					 content+='<th>#</th>'
-                     content+='<th>Brand</th>'
-                     content+='<th>Model</th>'
-					 content+='<th>Codename</th>'
-					 content+='<th>Date added/updated</th>'
-                     content+='<th>Download link</th>'
+                     content+='<th>{{translate.brand}}</th>'
+                     content+='<th>{{translate.model}}</th>'
+					 content+='<th>{{translate.codename}}</th>'
+					 content+='<th>{{translate.dateadded}}</th>'
+                     content+='<th>{{translate.downloadlink}}</th>'
                      content+='</tr>'
                      
                      snapshot.forEach(function(data){
@@ -61,7 +62,7 @@ update: 03/02/2018
                      content +='<td>'+model+'</td>'
                      content +='<td>'+codename+'</td>'
 					 content +='<td>'+date+'</td>'
-                     content+='<td><a href='+url+' target="_blank"> Download </a></td>'
+                     content+='<td><a href='+url+' target="_blank"> {{translate.download}} </a></td>'
                      content+='</tr>'
                      
                      	});
