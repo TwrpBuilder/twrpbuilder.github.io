@@ -66,35 +66,24 @@ update: 04/02/2018
 						<h2>{{translate.contributors}}</h2>
 						<p>{{translate.contributingtoproject}}</p>
 					</header>
-					<div class="flex flex-4">
-						<div class="box person">
-							<div class="image round">
-								<img src="/assets/images/pic03.jpg" alt="Person 1" />
-							</div>
-							<h3>Sumit Rajdev</h3>
-							<p>Coder</p>
-						</div>
-						<div class="box person">
-							<div class="image round">
-								<img src="/assets/images/pic04.jpg" alt="Person 2" />
-							</div>
-							<h3>Amit Khairnar</h3>
-							<p>UI Designer</p>
-						</div>
-						<div class="box person">
-							<div class="image round">
-								<img src="/assets/images/pic03.jpg" alt="Person 3" />
-							</div>
-							<h3>Berkant Korkmaz</h3>
-							<p>UI Designer</p>
-						</div>
-						<div class="box person">
-							<div class="image round">
-								<img src="/assets/images/pic04.jpg" alt="Person 4" />
-							</div>
-							<h3>Ethan Yonker</h3>
-							<p>TWRP Owner</p>
-						</div>
+					<div id="contributors_inner" class="flex flex-4">
+						<script>
+							$.getJSON("https://api.github.com/repos/TwrpBuilder/TwrpBuilder/contributors",function(contributors) {
+								var asset = contributors[0];
+								var content = '';
+								$.each(contributors, function(key, val) {
+								content+='<div class="box person">'
+								content+='<a href='+val.html_url+'>'
+								content+='<div class="image round">'
+								content+='<img src='+val.avatar_url+' alt="Person 4" height="143px" width="143px"/>'
+								content+='</div>'
+								content+='<h3>'+val.login+'</h3>'
+								content+='</a>'
+								content+='</div>'
+								});
+						  document.getElementById("contributors_inner").innerHTML =  content;
+						  });
+						</script>
 					</div>
 				</div>
 			</section>

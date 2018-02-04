@@ -2180,9 +2180,14 @@
 
 /* Box */
 
+	#contributors_inner {
+		display: -webkit-box;
+		white-space: nowrap;
+		overflow: auto;
+	}
+	
 	.box {
 		border: solid 1px #dbdbdb;
-		margin-bottom: 2em;
 		padding: 1.5em;
 	}
 
@@ -2200,7 +2205,7 @@
 
 		.box.person {
 			border: solid 1px rgba(255, 255, 255, 0.25);
-			padding: 3em 1.5em;
+			margin: 2em 1em;
 		}
 
 			.box.person h3 {
