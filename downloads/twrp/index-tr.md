@@ -3,7 +3,7 @@ layout: post
 title: TWRP Builder İndirmeleri
 lang: tr
 permalink: tr/downloads/twrp/
-update: 31/01/2018
+update: 03/02/2018
 ---
 <em style="color: #bbb">İpucu: Tuş takımınızda ```CTRL```+```F``` tuşlarına basın, ardından aygıtınızın modelini/takma adını yazın</em>
 <style> 
@@ -49,11 +49,11 @@ update: 31/01/2018
                      var val = data.val();
 					 
 					 var count="";
-                     var brand=val.Brand;
-                     var model=val.Model;
-					 var codename=val.Codename;
-					 var date=val.Date;
-                     var url=val.Url;
+                     var brand=val.brand;
+                     var model=val.model;
+					 var codename=val.codeName;
+					 var date=val.date;
+                     var url=val.url;
                       var body = document.getElementsByTagName("body")[0];
                      content+='<tr>'
 					 content +='<td class="count">'+count+'</td>'
@@ -61,7 +61,7 @@ update: 31/01/2018
                      content +='<td>'+model+'</td>'
                      content +='<td>'+codename+'</td>'
 					 content +='<td>'+date+'</td>'
-                     content+='<td><a href='+url+'> Download </a></td>'
+                     content+='<td><a href='+url+' target="_blank"> Download </a></td>'
                      content+='</tr>'
                      
                      	});
