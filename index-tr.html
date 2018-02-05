@@ -68,7 +68,7 @@ update: 04/02/2018
 					</header>
 					<div class="flex flex-4">
 						<script>
-							$.getJSON("https://api.github.com/repos/TwrpBuilder/TwrpBuilder/contributors",function(contributors) {
+							$.getJSON("https://api.github.com/orgs/twrpbuilder/members",function(contributors) {
 								var asset = contributors[0];
 								var content = '';
 								$.each(contributors, function(key, val) {
