@@ -80,3 +80,43 @@ lang:
         sww: Bir şeyler ters gitti
         pagenotfound: "Aradığınız sayfa<br> bulunamadı."
         gth: Ana sayfaya dön?
+  ar:
+        # header
+        home: الرئيسية
+        about: عنا
+        downloads: تحميلات صانع ريكفري TWRP
+        
+        # footer
+        followus: تابعنا
+        pageupdate: آخر تحديث لهذه الصفحة فى
+        locale: اللغة
+        unsupporteddevicesinformation: معلومات اﻷجهزة الغير مدعومة
+        
+        slogan: الموقع الرسمي لمشروع صانع ريكفري TWRP
+        checkgithub: تفقد مستودعاتنا على موقع GitHub
+        projectos: مشروعنا مفتوح المصدر بالكامل!
+        visit: زيارة
+        checkxda: تفقد موضوعنا على موقع المطورين XDA Developers
+        askonxda: لديك أى اسئلة؟ اسئلنا على موقع XDA!
+        dlta: تحميل التطبيق
+        needlatest: تحتاج إلى اﻹصدار اﻷخير؟ احصل عليه من هنا!
+        download: التحميل
+        contributors: المساهمون
+        contributingtoproject: اﻷشخاص المساهمون فى المشروع
+        about: عنا
+        aboutdesc: صانع ريكفري TWRP هو مشروع يهدف ﻹنشاء ريكفري TWRP للأجهزة الغير مدعومة من قبل TWRP بشكل رسمي. <br><br> فبواسطة مشروعنا، سيتم إنشاء ريكفري TWRP لجهازك! فقط قم بتحميل التطبيق وإنشاء حساب، قم بتسجيل طلب ليتم رفع الملفات المطلوبة من جهازك، ثم انتظر حتي يتم إنشاء الريكفري! وبمجرد أن ننتهي منها وتصبح جاهزة سوف يتم إشعارك!
+        dlnow: تحميل اﻵن!
+        hint: "تلميح: استخدم الاختصار ```CTRL```+```F``` وقم بكتابة اسم/موديل جهازك لتجد الملف بشكل أسرع."
+        brand: العلامة التجارية
+        model: الموديل
+        codename: الاسم الرمزي
+        dateadded: تاريخ اﻹضافة/التحديث
+        downloadlink: رابط التحميل
+        clicktoredirect: "<a id='download' class='button special'>اضغط هنا</a> ﻹعادة توجيهك إذا لم يعمل الرابط تلقائيا."
+        copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>الذهاب للصفحة الرئيسية.</a></em></p>"
+        
+        # 404.md
+        error404: خطأ 404
+        sww: هناك خطأ ما
+        pagenotfound: "الصفحة التي تبحث عنها<br> لا يمكن العثور عليها."
+        gth: عودة إلى الرئيسية؟
