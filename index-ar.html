@@ -66,7 +66,7 @@ update: 05/02/2018
 						<h2>{{translate.contributors}}</h2>
 						<p>{{translate.contributingtoproject}}</p>
 					</header>
-					<div class="flex flex-4">
+					<div id="contributors_inner" class="flex flex-4">
 						<script>
 							$.getJSON("https://api.github.com/orgs/twrpbuilder/members",function(contributors) {
 								var asset = contributors[0];
