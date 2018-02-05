@@ -80,7 +80,8 @@ lang:
         sww: Bir şeyler ters gitti
         pagenotfound: "Aradığınız sayfa<br> bulunamadı."
         gth: Ana sayfaya dön?
-  ar:
+    
+    ar:
         # header
         home: الرئيسية
         about: عنا
