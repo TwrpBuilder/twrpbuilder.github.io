@@ -35,7 +35,7 @@ lang:
         dateadded: Date added/updated
         downloadlink: Download link
         clicktoredirect: "<a id='download' class='button special'>Click here</a> to redirect if the link does not work automatically."
-        copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>Go to the home page.</a></em></p>"
+        copyright: Go to the home page.
         
         # unsupported_devices
         ud_content: "
@@ -89,7 +89,7 @@ lang:
         dateadded: Eklenme/Güncellenme tarihi
         downloadlink: İndirme bağlantısı
         clicktoredirect: "Eğer yönlendirme kendiliğinden çalışmazsa, <a id='download'>buraya basın</a>."
-        copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>Ana sayfaya dön.</a></em></p>"
+        copyright: Ana sayfaya dön.
         
         # unsupported_devices
         ud_content: "
@@ -143,7 +143,7 @@ lang:
         dateadded: تاريخ اﻹضافة/التحديث
         downloadlink: رابط التحميل
         clicktoredirect: "<a id='download' class='button special'>اضغط هنا</a> ﻹعادة توجيهك إذا لم يعمل الرابط تلقائيا."
-        copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>الذهاب للصفحة الرئيسية.</a></em></p>"
+        copyright: الذهاب للصفحة الرئيسية.
         
         # unsupported_devices
         ud_content: "
@@ -197,7 +197,7 @@ lang:
         dateadded: Date ajoutée/mise a jour
         downloadlink: Lien de téléchargement
         clicktoredirect: "<a id='download' class='button special'>Cliquez ici</a> si le lien n'a pas fonctionné automatiquement."
-        copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |   <a href='/'>Retourner a l'accueil.</a></em></p>"
+        copyright: Retourner a l'accueil.
         
         # unsupported_devices
         ud_content: "
