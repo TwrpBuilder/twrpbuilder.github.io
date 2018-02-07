@@ -18,7 +18,7 @@
 				<div class="footerLinks">
 					<div class="icons"> <!-- {%assign urlWoLang=={{page.permalink}} | replace: 'tr','' | replace: 'en','' | replace_first: '/','' %} {% unless menu.[0] == 'en' %}{{menu[0]}}{%endunless%} {{urlWoLang}} -->
 						<!-- /{%unless menu[0] == 'en'%}{{menu[0]}}{%endunless%} -->
-						<h4>{{translate.locale}}: {% for menu in site.data.translations.lang %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/' | remove: 'ar/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
+						<h4>{{translate.locale}}: {% for menu in site.data.translations.lang %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/' | remove: 'ar/' | remove: 'fr/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
 					</div>
 					<a href="{%unless page.lang == "en"%}/{{page.lang}}{%endunless%}/unsupported_devices">{{ translate.unsupporteddevicesinformation}}</a>
 					<h4>&copy; TWRP Builder <em>2018</em></h4>.

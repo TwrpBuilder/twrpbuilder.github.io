@@ -160,7 +160,8 @@ lang:
         sww: هناك خطأ ما
         pagenotfound: "الصفحة التي تبحث عنها<br> لا يمكن العثور عليها."
         gth: عودة إلى الرئيسية؟
-    en:
+    
+    fr:
         # header
         home: Accueil
         about: A Propos
@@ -169,7 +170,7 @@ lang:
         # footer
         followus: Suivez nous
         pageupdate: Cette page a été mise à jour pour la dernière fois le  
-        locale: Locale
+        locale: Langues
         unsupporteddevicesinformation: Informations sur les appareils non supportés
         
         # index
@@ -204,9 +205,9 @@ lang:
 
         Jetez un oeil sur les critères pour les périphériques non pris en charge ci-dessous:
         
-        * chipsets MT65xx
+        * Chipsets MT65xx
         
-        * Périphériques ayant moins d'espace que 12 <em>megabytes</ em> dans la partition de récupération"
+        * Périphériques ayant moins d'espace que 12 <em>megabytes</em> dans la partition de récupération"
         
         # 404.md
         error404: Erreur 404

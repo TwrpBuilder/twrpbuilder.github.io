@@ -2,8 +2,8 @@
 layout: post
 title: TWRP Builder Downloads
 lang: fr
-permalink: downloads/twrp/
-update: 04/02/2018
+permalink: fr/downloads/twrp/
+update: 07/02/2018
 ---
 {% assign translate = site.data.translations.lang[page.lang] %}
 <em style="color: #bbb">{{translate.hint}}</em>
