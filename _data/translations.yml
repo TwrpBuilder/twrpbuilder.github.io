@@ -11,6 +11,7 @@ lang:
         locale: Locale
         unsupporteddevicesinformation: Unsupported devices informarion
         
+        # index
         slogan: Official site of the  TWRP Builder Project
         checkgithub: Check out our GitHub repositories
         projectos: Our project is open-source!
@@ -25,6 +26,8 @@ lang:
         about: About
         aboutdesc: TWRP Builder is a project that aims at creating Team Win Recovery Project (TWRP) for the devices which don't have their own TWRP support yet. <br><br> With our project, TWRP will be created for your device! Download our app, create an account, upload the neccessary files from your device and keep calm! Once we get the TWRP recovery image ready for your device, you will be notified!
         dlnow: Download now!
+        
+        # TWRP Builder Downloads
         hint: "Hint: Use ```CTRL```+```F``` and type your device model/codename."
         brand: Brand
         model: Model
@@ -33,6 +36,16 @@ lang:
         downloadlink: Download link
         clicktoredirect: "<a id='download' class='button special'>Click here</a> to redirect if the link does not work automatically."
         copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>Go to the home page.</a></em></p>"
+        
+        # unsupported_devices
+        ud_content: "
+        Even if we are experienced, dealing with devices that we don't own isn't so easy. Unfortunately, there are specific criteria that indicates the type of devices we cannot support.
+
+        Take a look at the criteria for unsupported devices below:
+        
+        * MT65xx chipsets
+        
+        * Devices having less space than 12 <em>megabytes</em> in recovery partition"
         
         # 404.md
         error404: ERROR 404
@@ -52,6 +65,7 @@ lang:
         locale: Bölge
         unsupporteddevicesinformation: Desteklenmeyen aygıtlar hakkında
 
+        # index
         slogan: TWRP Builder Projesinin resmî sitesi.
         checkgithub: GitHub ambarlarımıza bakın
         projectos: Projemiz açık kaynaklıdır!
@@ -66,6 +80,8 @@ lang:
         about: Hakkında
         aboutdesc: TWRP Builder, henüz hâlâ Team Win Recovery Project (TWRP) desteği bulunmayan aygıtlara TWRP desteği sunmayı hedefler. <br><br> Bu proje ile, o aygıtlar da TWRP desteğini alır! Uygulamayı indirin, bir hesap oluşturun, cihazınızdan gerekli dosyaları sunucumuza yükleyin ve arkanıza yaslanın! TWRP yansımasını hazır duruma getirdiğimiz zaman bilgilendirileceksiniz!
         dlnow: Hemen indirin!
+        
+        # TWRP Builder Downloads
         hint: "İpucu: Tuş takımınızda ```CTRL```+```F``` tuşlarına basın, ardından aygıtınızın modelini/takma adını yazın."
         brand: Marka
         model: Model
@@ -74,6 +90,16 @@ lang:
         downloadlink: İndirme bağlantısı
         clicktoredirect: "Eğer yönlendirme kendiliğinden çalışmazsa, <a id='download'>buraya basın</a>."
         copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>Ana sayfaya dön.</a></em></p>"
+        
+        # unsupported_devices
+        ud_content: "
+        Deneyimli olsak bile, elimizde olmayan aygıtlarla uğraşmak o kadar da kolay değil. Ne yazık ki, destekleyemeyeceğimiz aygıtları belirten bazı koşullar var.
+
+        Aşağıda destekleyemeyeceğimiz aygıtları belirten koşullara göz atabilirsiniz:
+
+        * MT65xx çipsetleri
+        
+        * Recovery bölümünde <em>12 megabayttan</em> daha az hafıza olan aygıtlar"
         
         # 404.md
         error404: HATA 404
@@ -93,6 +119,7 @@ lang:
         locale: اللغة
         unsupporteddevicesinformation: معلومات اﻷجهزة الغير مدعومة
         
+        # index
         slogan: الموقع الرسمي لمشروع صانع ريكفري TWRP
         checkgithub: تفقد مستودعاتنا على موقع GitHub
         projectos: مشروعنا مفتوح المصدر بالكامل!
@@ -107,6 +134,8 @@ lang:
         about: عنا
         aboutdesc: صانع ريكفري TWRP هو مشروع يهدف ﻹنشاء ريكفري TWRP للأجهزة الغير مدعومة من قبل TWRP بشكل رسمي. <br><br> فبواسطة مشروعنا، سيتم إنشاء ريكفري TWRP لجهازك! فقط قم بتحميل التطبيق وإنشاء حساب، قم بتسجيل طلب ليتم رفع الملفات المطلوبة من جهازك، ثم انتظر حتي يتم إنشاء الريكفري! وبمجرد أن ننتهي منها وتصبح جاهزة سوف يتم إشعارك!
         dlnow: تحميل اﻵن!
+        
+        # TWRP Builder Downloads
         hint: "تلميح: استخدم الاختصار ```CTRL```+```F``` وقم بكتابة اسم/موديل جهازك لتجد الملف بشكل أسرع."
         brand: العلامة التجارية
         model: الموديل
@@ -115,6 +144,16 @@ lang:
         downloadlink: رابط التحميل
         clicktoredirect: "<a id='download' class='button special'>اضغط هنا</a> ﻹعادة توجيهك إذا لم يعمل الرابط تلقائيا."
         copyright: "<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |	 <a href='/'>الذهاب للصفحة الرئيسية.</a></em></p>"
+        
+        # unsupported_devices
+        ud_content: "
+        حتي لو كنا خبراء، فإن التعامل مع اﻷجهزة التى لا نملكها ليس بهذه السهولة. ولسوء الحظ هناك  بعض المعايير التي تجعل من اﻷجهزة غير مدعومة من قبلنا.
+
+        ألق نظرة على معايير الأجهزة غير المدعومة باﻷسفل:
+    
+        * معالجات MT65xx
+        
+        * اﻷجهزة التي تقل مساحة قسم الريكفري بها عن 12 <em>ميجابابت</em>."
         
         # 404.md
         error404: خطأ 404
