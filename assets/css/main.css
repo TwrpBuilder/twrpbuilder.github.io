@@ -9,13 +9,15 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
 		font-size: 100%;
 		font-family: Pt Sans;
 		vertical-align: baseline;
+		background: #272727;
+		color: #fff;
 	}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -1799,7 +1801,6 @@
 		}
 
 		section.wrapper.style1, article.wrapper.style1 {
-			background: #5385c1;
 			color: #bacee6;
 		}
 
@@ -2490,16 +2491,11 @@
 			border-right: 0;
 		}
 
-			table tbody tr:nth-child(2n + 1) {
-				background-color: rgba(144, 144, 144, 0.075);
-			}
-
 		table td {
 			padding: 0.75em 0.75em;
 		}
 
 		table th {
-			color: #555;
 			font-size: 0.9em;
 			font-weight: 600;
 			padding: 0 0.75em 0.75em 0.75em;
@@ -2723,7 +2719,6 @@
 	}
 
 		.subpage #header {
-			background: #5385c1;
 			top: 0;
 			height: 44px;
 			line-height: 44px;
@@ -2731,7 +2726,6 @@
 		}
 
 	#header {
-		background: rgba(0,0,0,.7);
 		color: #d4e0ef;
 		cursor: default;
 		height: 3.25em;
@@ -2863,7 +2857,6 @@
 		position: fixed;
 		right: 0;
 		top: 0;
-		background: #5385c1;
 		color: #d4e0ef;
 		height: 100%;
 		max-width: 80%;
