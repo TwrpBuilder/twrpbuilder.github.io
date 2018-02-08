@@ -1,4 +1,19 @@
 {% assign translate = site.data.translations.lang[page.lang] %}
+<script type="text/javascript">
+    $( document ).ready(function(){
+        var userLang = navigator.language || navigator.userLanguage;
+		var page = window.location.pathname;
+        if (userLang == "en") {
+            window.location.href = "/"+page
+        } else if (userLang == "fr" && !window.location.href.match("/fr"))  {
+            window.location.href = "/fr" + page
+        } else if (userLang == "ar" && !window.location.href.match("/ar"))  {
+            window.location.href = "/ar"
+        } else if (userLang == "tr" && !window.location.href.match("/tr"))  {
+            window.location.href = "/tr" + page
+        };
+    });
+</script>
 <script>
 	var lastPosition = $(window).scrollTop();
 		$(window).scroll(function(event){
