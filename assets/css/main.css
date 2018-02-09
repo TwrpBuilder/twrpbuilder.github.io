@@ -9,7 +9,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -2721,19 +2721,21 @@
 		.subpage #header {
 			top: 0;
 			height: 44px;
-			line-height: 44px;
 			position: fixed;
+			border-bottom: 1px solid;
+			padding-top: 10px;
 		}
 
 	#header {
 		color: #d4e0ef;
 		cursor: default;
-		/*height: 3.25em;*/
 		left: 0;
-		line-height: 3.25em;
 		position: fixed;
 		width: 100%;
 		z-index: 10001;
+		height: 44px;
+		padding-top: 10px;
+		border-bottom: 1px solid;
 	}
 	
 	#header .rightHead {
