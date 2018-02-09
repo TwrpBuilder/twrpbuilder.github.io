@@ -9,7 +9,7 @@
 
 /* Reset */
 
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	html, body, div, span, applet, object, iframe, h1, h2, h4, h5, h6, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
 		padding: 0;
 		border: 0;
@@ -1633,13 +1633,9 @@
 		}
 
 	a {
-		color: #5385c1;
+		color: #c7354c;
 		text-decoration: none;
 	}
-
-		a:hover {
-			text-decoration: underline;
-		}
 
 	strong, b {
 		color: #555;
@@ -1811,11 +1807,11 @@
 			section.wrapper.style1 header p, article.wrapper.style1 header p {
 				color: #bacee6;
 			}
-
+/* Temporary disable. Note here: berkantkz-h3.
 			section.wrapper.style1 h3, article.wrapper.style1 h3 {
 				color: #FFF;
-			}
-			
+			}			
+*/			
 		.load-bar {
 			top: -30px;
 		}
@@ -2663,7 +2659,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #5385c1;
+			background-color: #c7354c;
 			color: #ffffff !important;
 		}
 
@@ -2672,7 +2668,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #6692c8;
+				background-color: #751625;
 			}
 
 			input[type="submit"].special:active,
@@ -2680,7 +2676,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #4278b8;
+				background-color: #c7470e;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -2722,7 +2718,7 @@
 			top: 0;
 			height: 44px;
 			position: fixed;
-			border-bottom: 1px solid;
+			border-bottom: 1px solid #c7354c;
 			padding-top: 10px;
 		}
 
@@ -2735,7 +2731,7 @@
 		z-index: 10001;
 		height: 44px;
 		padding-top: 10px;
-		border-bottom: 1px solid;
+		border-bottom: 1px solid #c7354c;
 	}
 	
 	#header .rightHead {
@@ -3098,7 +3094,7 @@
 	}
 	
 	#footer .icons a:hover {
-		color: #5385c1;
+		color: #c7354c;
 		text-decoration: none;
 		transition: color 0.2s ease-in-out;
 	}
