@@ -2744,6 +2744,7 @@
 		#header .inner {
 			margin: 0 auto;
 			position: relative;
+			height: 33px;
 		}
 
 		#header .logo {
@@ -2783,7 +2784,6 @@
 			#header a.navPanelToggle {
 				display: none;
 				text-decoration: none;
-				height: 4em;
 				width: 4em;
 				z-index: 10003;
 			}
