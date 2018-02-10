@@ -2936,12 +2936,12 @@
 /* Banner */
 
 	#banner {
-		padding: 12em 0 10em 0;
+		padding: 12em 0 10em 0;/*
 		background-image: url('/assets/images/banner.jpg');
 		background-size: cover;
 		background-position: center;
 		background-attachment: fixed;
-		background-repeat: no-repeat;
+		background-repeat: no-repeat;*/
 		text-align: center;
 	}
 
