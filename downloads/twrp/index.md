@@ -3,7 +3,7 @@ layout: post
 title: TWRP Builder Downloads
 lang: en
 permalink: downloads/twrp/
-update: 04/02/2018
+update: 11/02/2018
 ---
 {% assign translate = site.data.translations.lang[page.lang] %}
 <em style="color: #bbb">{{translate.hint}}</em>
@@ -82,7 +82,14 @@ update: 04/02/2018
 					});
 					
 					if (window.location.href.indexOf("#") > -1) {
-						var id = window.location.href[window.location.href.length -1];
+						var firstDigit = window.location.href[window.location.href.length -2];
+						var secondDigit = window.location.href[window.location.href.length -1];
+						var id =  '';
+						if (firstDigit != '#') {
+							id = firstDigit + secondDigit
+						} else {
+							id = secondDigit 
+						};
 						var item = "#"+id;
 						$(item).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
 						}
