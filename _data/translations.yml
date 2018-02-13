@@ -32,6 +32,7 @@ lang:
         brand: Brand
         model: Model
         codename: Codename
+        maintainer: Maintainer
         dateadded: Date added/updated
         downloadlink: Download link
         clicktoredirect: "<a id='download' class='button special'>Click here</a> to redirect if the link does not work automatically."
@@ -86,6 +87,7 @@ lang:
         brand: Marka
         model: Model
         codename: Takma ad
+        maintainer: Geliştirici
         dateadded: Eklenme/Güncellenme tarihi
         downloadlink: İndirme bağlantısı
         clicktoredirect: "Eğer yönlendirme kendiliğinden çalışmazsa, <a id='download'>buraya basın</a>."
@@ -140,6 +142,7 @@ lang:
         brand: العلامة التجارية
         model: الموديل
         codename: الاسم الرمزي
+        maintainer: المشرف
         dateadded: تاريخ اﻹضافة/التحديث
         downloadlink: رابط التحميل
         clicktoredirect: "<a id='download' class='button special'>اضغط هنا</a> ﻹعادة توجيهك إذا لم يعمل الرابط تلقائيا."
@@ -194,6 +197,7 @@ lang:
         brand: Marque
         model: Modele
         codename: Nom de code
+        maintainer: Mainteneur
         dateadded: Date ajoutée/mise a jour
         downloadlink: Lien de téléchargement
         clicktoredirect: "<a id='download' class='button special'>Cliquez ici</a> si le lien n'a pas fonctionné automatiquement."
