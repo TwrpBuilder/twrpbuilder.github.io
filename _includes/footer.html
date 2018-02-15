@@ -14,13 +14,13 @@
 				<!-- replace: "xxx","{{page.update}} -->
 				{%if page.update%}<h4 class="info"><em>{{translate.pageupdate"}} {{page.update}}</em></h4>{%endif%}
 			</ul>
-			
+
 			<div class="copyright">
 				<div class="footerLinks">
-					<div class="icons"> 
+					<div class="icons">
 						<br>
 						<br>
-						<h4>{{translate.locale}}: {% for menu in site.data.translations.lang %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/' | remove: 'ar/' | remove: 'fr/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
+						<h4>{{translate.locale}}: {% for menu in site.data.translations.lang %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/' | remove: 'ar/' | remove: 'fr/' | remove: 'cs/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
 					</div>
 					<h4 style="color: #bbbbbb4a">&copy; TWRP Builder <em>2018</em></h4>
 				</div>
