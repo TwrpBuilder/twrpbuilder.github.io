@@ -3,7 +3,7 @@ layout: post
 title: Stažení TWRP Builder
 lang: cs
 permalink: cs/downloads/twrp/
-update: 11/02/2018
+update: 15/02/2018
 ---
 {% assign translate = site.data.translations.lang[page.lang] %}
 <em style="color: #bbb">{{translate.hint}}</em>

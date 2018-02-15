@@ -3,7 +3,7 @@ layout: post
 title: Nepodporovaná zařízení
 lang: cs
 permalink: cs/unsupported_devices/
-update: 07/02/2018
+update: 15/02/2018
 ---
 {% assign translate = site.data.translations.lang[page.lang] %}
 
