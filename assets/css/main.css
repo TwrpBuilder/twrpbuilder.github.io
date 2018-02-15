@@ -2972,6 +2972,11 @@
 			-webkit-user-drag: none;
 			user-drag: none;
 			-webkit-touch-callout: none;
+            height: 51px;
+            width: 540px;
+            background: url("/assets/images/twrpBuilder_w.png");
+            background-size: cover;
+            margin: 5px auto;
 		}
 
 		@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -2980,7 +2985,7 @@
 				background-attachment: scroll;
 			}
 		
-			#banner img {
+			#banner .bannerimg {
 				height: 35px;
 				width: 366px;
 				-moz-user-select: none;
