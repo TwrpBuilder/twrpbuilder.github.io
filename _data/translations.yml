@@ -43,6 +43,11 @@ lang:
         downloadlink: رابط التحميل
         clicktoredirect: "<a id='download' class='button special'>اضغط هنا</a> ﻹعادة توجيهك إذا لم يعمل الرابط تلقائيا."
         copyright: الذهاب للصفحة الرئيسية.
+        rejector: Rejector
+        note: Note
+        buildscompleted: Completed Builds
+        buildsinqueue: Builds in queue
+        buildsrejected: Rejected builds
 
         # unsupported_devices
         ud_content: "
@@ -98,6 +103,11 @@ lang:
         downloadlink: Odkaz ke stažení
         clicktoredirect: "<a id='download' class='button special'>Klikněte sem</a> pro přesměrování pokud nejste automaticky přesměrován."
         copyright: Jít na domovskou stránku.
+        rejector: Rejector
+        note: Note
+        buildscompleted: Completed Builds
+        buildsinqueue: Builds in queue
+        buildsrejected: Rejected builds
 
         # unsupported_devices
         ud_content: "
@@ -153,6 +163,11 @@ lang:
         downloadlink: Download link
         clicktoredirect: "<a id='download' class='button special'>Click here</a> to redirect if the link does not work automatically."
         copyright: Go to the home page.
+        rejector: Rejector
+        note: Note
+        buildscompleted: Completed Builds
+        buildsinqueue: Builds in queue
+        buildsrejected: Rejected builds
 
         # unsupported_devices
         ud_content: "
@@ -208,6 +223,11 @@ lang:
         downloadlink: Lien de téléchargement
         clicktoredirect: "<a id='download' class='button special'>Cliquez ici</a> si le lien n'a pas fonctionné automatiquement."
         copyright: Retourner a l'accueil.
+        rejector: Rejector
+        note: Note
+        buildscompleted: Completed Builds
+        buildsinqueue: Builds in queue
+        buildsrejected: Rejected builds
 
         # unsupported_devices
         ud_content: "
@@ -263,6 +283,11 @@ lang:
         downloadlink: İndirme bağlantısı
         clicktoredirect: "Eğer yönlendirme kendiliğinden çalışmazsa, <a id='download'>buraya basın</a>."
         copyright: Ana sayfaya dön.
+        rejector: Redden
+        note: Not
+        buildscompleted: Tamamlanan yapılar
+        buildsinqueue: Kuyruktaki yapılar
+        buildsrejected: Reddedilen yapılar
 
         # unsupported_devices
         ud_content: "

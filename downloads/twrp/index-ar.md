@@ -20,7 +20,12 @@ update: 11/02/2018
       <!-- Table -->
       <div class="table-wrapper">
          <table>
-            <tbody id="table">
+             <div id="tabs">
+                <button id="tab_completed" onclick="table_completed()">{{translate.buildscompleted}}</button>
+                <button id="tab_in-queue" onclick="table_inQueue()">{{translate.buildsinqueue}}</button>
+                <button id="tab_rejected" onclick="table_rejected()">{{translate.buildsrejected}}</button>
+             </div>
+            <tbody id="table_completed">
                <tr>
                   <th>#</th>
                   <th>{{translate.brand}}</th>
@@ -68,7 +73,7 @@ update: 11/02/2018
                         content+='</tr>'
                       });
                       
-                      document.getElementById("table").innerHTML = content;
+                      document.getElementById("table_completed").innerHTML = content;
 
                       $('.maintainer').each(function(i) {
                           $(this).text($(this).text().replace('@gmail.com',''));
@@ -139,6 +144,113 @@ update: 11/02/2018
                   }
                </style>
             </tbody>
+            
+            <tbody id="table_in-queue">
+               <tr>
+                  <th>#</th>
+                  <th>{{translate.brand}}</th>
+                  <th>{{translate.model}}</th>
+                  <th>{{translate.codename}}</th>
+                  <th>{{translate.maintainer}}</th>
+                  <th>{{translate.dateadded}}</th>
+               </tr>
+               <script>
+                  var userDataRef = firebase.database().ref("InQueue").orderByKey();
+                  var button = document.createElement("button");
+                  button.innerHTML = "Do Something";
+                  
+                  userDataRef.once("value").then(function(snapshot) {
+                      var content='';
+                      content+='<tr>'
+                      content+='<th>#</th>'
+                      content+='<th>{{translate.brand}}</th>'
+                      content+='<th>{{translate.model}}</th>'
+                      content+='<th>{{translate.codename}}</th>'
+                      content+='<th>{{translate.dateadded}}</th>'
+                      content+='</tr>'
+
+                      snapshot.forEach(function(data){
+                        var val = data.val();
+                        var count2="";
+                        var brand=val.brand;
+                        var model=val.model;
+                        var codename=val.codeName;
+                        var date=val.date;
+                        var body = document.getElementsByTagName("body")[0];
+                        content+='<tr>'
+                        content +='<td class="count2">'+count2+'</td>'
+                        content +='<td>'+brand+'</td>'
+                        content +='<td>'+model+'</td>'
+                        content +='<td>'+codename+'</td>'
+                        content +='<td>'+date+'</td>'
+                        content+='</tr>'
+                      });
+                      
+                      document.getElementById("table_in-queue").innerHTML = content;
+
+                      $('.count2').each(function(i) {
+                        var x = $(this).index()+1;
+                        var y = i + 1;
+                        $(this).text(x+i);
+                      });
+                  });
+               </script>
+           </tbody>
+           
+           <tbody id="table_rejected">
+               <tr>
+                  <th>#</th>
+                  <th>{{translate.brand}}</th>
+                  <th>{{translate.model}}</th>
+                  <th>{{translate.dateadded}}</th>
+                  <th>{{translate.rejector}}</th>
+                  <th>{{translate.note}}</th>
+               </tr>
+               <script>
+                  var userDataRef = firebase.database().ref("Rejected").orderByKey();
+                  var button = document.createElement("button");
+                  button.innerHTML = "Do Something";
+                  
+                  userDataRef.once("value").then(function(snapshot) {
+                      var content='';
+                      content+='<tr>'
+                      content+='<th>#</th>'
+                      content+='<th>{{translate.brand}}</th>'
+                      content+='<th>{{translate.model}}</th>'
+                      content+='<th>{{translate.dateadded}}</th>'
+                      content+='<th>{{translate.rejector}}</th>'
+                      content+='<th>{{translate.note}}</th>'
+                      content+='</tr>'
+
+                      snapshot.forEach(function(data){
+                        var val = data.val();
+                        var count3="";
+                        var brand=val.brand;
+                        var model=val.model;
+                        var date=val.date;
+                        var note=val.note;
+                        var rejector=val.rejector;
+                        var body = document.getElementsByTagName("body")[0];
+                        content+='<tr>'
+                        content +='<td class="count3">'+count3+'</td>'
+                        content +='<td>'+brand+'</td>'
+                        content +='<td>'+model+'</td>'
+                        content +='<td>'+date+'</td>'
+                        content +='<td>'+rejector+'</td>'
+                        content +='<td>'+note+'</td>'
+                        content+='</tr>'
+                      });
+                      
+                      document.getElementById("table_rejected").innerHTML = content;
+
+                      $('.count3').each(function(i) {
+                        var x = $(this).index()+1;
+                        var y = i + 1;
+                        $(this).text(x+i);
+                      });
+                  });
+               </script>
+           </tbody>
          </table>
          <div class="load-bar">
             <div class="bar"></div>
@@ -147,4 +259,30 @@ update: 11/02/2018
          </div>
       </div>
    </div>
+   <script>
+        function table_completed() {
+            document.getElementById('table_completed').style.display = "table-row-group";
+            document.getElementById('tab_completed').style.background ="#fff7"
+            document.getElementById('table_in-queue').style.display = "none";
+            document.getElementById('tab_in-queue').style.background ="#fff4"
+            document.getElementById('table_rejected').style.display = "none";
+            document.getElementById('tab_rejected').style.background ="#fff4"
+        };
+        function table_inQueue() {
+            document.getElementById('table_completed').style.display = "none";
+            document.getElementById('tab_completed').style.background ="#fff4"
+            document.getElementById('table_in-queue').style.display = "table-row-group";
+            document.getElementById('tab_in-queue').style.background ="#fff7"
+            document.getElementById('table_rejected').style.display = "none";
+            document.getElementById('tab_rejected').style.background ="#fff4"
+        };
+        function table_rejected() {
+            document.getElementById('table_completed').style.display = "none";
+            document.getElementById('tab_completed').style.background ="#fff4"
+            document.getElementById('table_in-queue').style.display = "none";
+            document.getElementById('tab_in-queue').style.background ="#fff4"
+            document.getElementById('table_rejected').style.display = "table-row-group";
+            document.getElementById('tab_rejected').style.background ="#fff7"
+        };
+   </script>
 </section>

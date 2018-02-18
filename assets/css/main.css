@@ -2471,6 +2471,47 @@
 
 /* Table */
 
+    #tabs {
+        display: -webkit-box;
+    }
+
+    #tabs button {
+        margin: 0 0 -1px 0;
+    }
+
+    #tabs button:hover {
+        background: #fff7;
+        cursor: pointer;
+    }
+
+    #table_completed {
+        display: table-row-group;
+    }
+
+    #table_in-queue {
+        display: none;
+    }
+
+    #table_rejected {
+        display: none;
+    }
+
+    #tab_completed {
+        background: #fff7;
+    }
+
+    #tab_in-queue {
+        background: #fff4;
+    }
+
+    #tab_rejected {
+        background: #fff4;
+    }
+
+    tr {
+        vertical-align: middle !important;
+    }
+
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
