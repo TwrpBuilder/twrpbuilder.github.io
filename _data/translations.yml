@@ -43,12 +43,12 @@ lang:
         downloadlink: رابط التحميل
         clicktoredirect: "<a id='download' class='button special'>اضغط هنا</a> ﻹعادة توجيهك إذا لم يعمل الرابط تلقائيا."
         copyright: الذهاب للصفحة الرئيسية.
-        rejector: Rejector
-        note: Note
-        buildscompleted: Completed builds
-        buildsinqueue: Builds in queue
-        buildsrunning: Running builds
-        buildsrejected: Rejected builds
+        rejector: مرفوض بواسطة
+        note: ملاحظات
+        buildscompleted: المنتهية
+        buildsinqueue: المنتظرة
+        buildsrunning: الجارية
+        buildsrejected: المرفوضة
 
         # unsupported_devices
         ud_content: "
