@@ -2492,6 +2492,10 @@
         display: none;
     }
 
+    #table_running {
+        display: none;
+    }
+
     #table_rejected {
         display: none;
     }
@@ -2501,6 +2505,10 @@
     }
 
     #tab_in-queue {
+        background: #fff4;
+    }
+
+    #tab_running {
         background: #fff4;
     }
 

@@ -45,8 +45,9 @@ lang:
         copyright: الذهاب للصفحة الرئيسية.
         rejector: Rejector
         note: Note
-        buildscompleted: Completed Builds
+        buildscompleted: Completed builds
         buildsinqueue: Builds in queue
+        buildsrunning: Running builds
         buildsrejected: Rejected builds
 
         # unsupported_devices
@@ -105,8 +106,9 @@ lang:
         copyright: Jít na domovskou stránku.
         rejector: Rejector
         note: Note
-        buildscompleted: Completed Builds
+        buildscompleted: Completed builds
         buildsinqueue: Builds in queue
+        buildsrunning: Running builds
         buildsrejected: Rejected builds
 
         # unsupported_devices
@@ -165,8 +167,9 @@ lang:
         copyright: Go to the home page.
         rejector: Rejector
         note: Note
-        buildscompleted: Completed Builds
+        buildscompleted: Completed builds
         buildsinqueue: Builds in queue
+        buildsrunning: Running builds
         buildsrejected: Rejected builds
 
         # unsupported_devices
@@ -225,8 +228,9 @@ lang:
         copyright: Retourner a l'accueil.
         rejector: Rejector
         note: Note
-        buildscompleted: Completed Builds
+        buildscompleted: Completed builds
         buildsinqueue: Builds in queue
+        buildsrunning: Running builds
         buildsrejected: Rejected builds
 
         # unsupported_devices
@@ -287,6 +291,7 @@ lang:
         note: Not
         buildscompleted: Tamamlanan yapılar
         buildsinqueue: Kuyruktaki yapılar
+        buildsrunning: İşlemdeki yapılar
         buildsrejected: Reddedilen yapılar
 
         # unsupported_devices

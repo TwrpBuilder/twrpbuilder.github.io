@@ -23,6 +23,7 @@ update: 11/02/2018
              <div id="tabs">
                 <button id="tab_completed" onclick="table_completed()">{{translate.buildscompleted}}</button>
                 <button id="tab_in-queue" onclick="table_inQueue()">{{translate.buildsinqueue}}</button>
+                <button id="tab_running" onclick="table_running()">{{translate.buildsrunning}}</button>
                 <button id="tab_rejected" onclick="table_rejected()">{{translate.buildsrejected}}</button>
              </div>
             <tbody id="table_completed">
@@ -197,6 +198,58 @@ update: 11/02/2018
                </script>
            </tbody>
            
+           <tbody id="table_running">
+               <tr>
+                  <th>#</th>
+                  <th>{{translate.brand}}</th>
+                  <th>{{translate.model}}</th>
+                  <th>{{translate.codename}}</th>
+                  <th>{{translate.maintainer}}</th>
+                  <th>{{translate.dateadded}}</th>
+               </tr>
+               <script>
+                  var userDataRef = firebase.database().ref("RunningBuild").orderByKey();
+                  var button = document.createElement("button");
+                  button.innerHTML = "Do Something";
+                  
+                  userDataRef.once("value").then(function(snapshot) {
+                      var content='';
+                      content+='<tr>'
+                      content+='<th>#</th>'
+                      content+='<th>{{translate.brand}}</th>'
+                      content+='<th>{{translate.model}}</th>'
+                      content+='<th>{{translate.codename}}</th>'
+                      content+='<th>{{translate.dateadded}}</th>'
+                      content+='</tr>'
+
+                      snapshot.forEach(function(data){
+                        var val = data.val();
+                        var count4="";
+                        var brand=val.brand;
+                        var model=val.model;
+                        var codename=val.codeName;
+                        var date=val.date;
+                        var body = document.getElementsByTagName("body")[0];
+                        content+='<tr>'
+                        content +='<td class="count4">'+count4+'</td>'
+                        content +='<td>'+brand+'</td>'
+                        content +='<td>'+model+'</td>'
+                        content +='<td>'+codename+'</td>'
+                        content +='<td>'+date+'</td>'
+                        content+='</tr>'
+                      });
+                      
+                      document.getElementById("table_running").innerHTML = content;
+
+                      $('.count4').each(function(i) {
+                        var x = $(this).index()+1;
+                        var y = i + 1;
+                        $(this).text(x+i);
+                      });
+                  });
+               </script>
+           </tbody>
+           
            <tbody id="table_rejected">
                <tr>
                   <th>#</th>
@@ -262,27 +315,43 @@ update: 11/02/2018
    <script>
         function table_completed() {
             document.getElementById('table_completed').style.display = "table-row-group";
-            document.getElementById('tab_completed').style.background ="#fff7"
+            document.getElementById('tab_completed').style.background ="#fff7";
             document.getElementById('table_in-queue').style.display = "none";
-            document.getElementById('tab_in-queue').style.background ="#fff4"
+            document.getElementById('tab_in-queue').style.background ="#fff4";
+            document.getElementById('table_running').style.display = "none";
+            document.getElementById('tab_running').style.background ="#fff4";
             document.getElementById('table_rejected').style.display = "none";
-            document.getElementById('tab_rejected').style.background ="#fff4"
+            document.getElementById('tab_rejected').style.background ="#fff4";
         };
         function table_inQueue() {
             document.getElementById('table_completed').style.display = "none";
-            document.getElementById('tab_completed').style.background ="#fff4"
+            document.getElementById('tab_completed').style.background ="#fff4";
             document.getElementById('table_in-queue').style.display = "table-row-group";
-            document.getElementById('tab_in-queue').style.background ="#fff7"
+            document.getElementById('tab_in-queue').style.background ="#fff7";
+            document.getElementById('table_running').style.display = "none";
+            document.getElementById('tab_running').style.background ="#fff4";
             document.getElementById('table_rejected').style.display = "none";
             document.getElementById('tab_rejected').style.background ="#fff4"
         };
+        function table_running() {
+            document.getElementById('table_completed').style.display = "none";
+            document.getElementById('tab_completed').style.background ="#fff4";
+            document.getElementById('table_in-queue').style.display = "none";
+            document.getElementById('tab_in-queue').style.background ="#fff4";
+            document.getElementById('table_running').style.display = "table-row-group";
+            document.getElementById('tab_running').style.background ="#fff7";
+            document.getElementById('table_rejected').style.display = "none";
+            document.getElementById('tab_rejected').style.background ="#fff4";
+        };
         function table_rejected() {
             document.getElementById('table_completed').style.display = "none";
-            document.getElementById('tab_completed').style.background ="#fff4"
+            document.getElementById('tab_completed').style.background ="#fff4";
             document.getElementById('table_in-queue').style.display = "none";
-            document.getElementById('tab_in-queue').style.background ="#fff4"
+            document.getElementById('tab_in-queue').style.background ="#fff4";
+            document.getElementById('table_running').style.display = "none";
+            document.getElementById('tab_running').style.background ="#fff4";
             document.getElementById('table_rejected').style.display = "table-row-group";
-            document.getElementById('tab_rejected').style.background ="#fff7"
+            document.getElementById('tab_rejected').style.background ="#fff7";
         };
    </script>
 </section>
