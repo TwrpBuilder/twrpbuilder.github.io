@@ -87,12 +87,13 @@ update: 11/02/2018
                         var x = $(this).index()+1;
                         var y = i + 1;
                         $(this).text(x+i);
-                        $(this).wrap($('<a>').attr('href','#'+y));
+                        $(this).wrap($('<a>').attr('href','javascript:;'));
                         $(this).attr('id',x+i);
 
                         $(this).click(function() {
                             $('.count').parent().parent().css({'background-color':''});
                             $(this).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
+                            parent.location.href = href + '#' + y;
                         });
                       });
 
@@ -313,6 +314,7 @@ update: 11/02/2018
       </div>
    </div>
    <script>
+        var href;
         function table_completed() {
             document.getElementById('table_completed').style.display = "table-row-group";
             document.getElementById('tab_completed').style.background ="#fff7";
@@ -322,6 +324,12 @@ update: 11/02/2018
             document.getElementById('tab_running').style.background ="#fff4";
             document.getElementById('table_rejected').style.display = "none";
             document.getElementById('tab_rejected').style.background ="#fff4";
+            if (parent.location.hash.indexOf('completed') > -1) {
+                parent.location.hash = parent.location.hash;
+            } else {
+                parent.location.hash = 'tab=completed';
+            };
+            href = "#tab=completed";
         };
         function table_inQueue() {
             document.getElementById('table_completed').style.display = "none";
@@ -332,6 +340,8 @@ update: 11/02/2018
             document.getElementById('tab_running').style.background ="#fff4";
             document.getElementById('table_rejected').style.display = "none";
             document.getElementById('tab_rejected').style.background ="#fff4"
+            parent.location.hash = 'tab=inQueue';
+            href = "#tab=inQueue";
         };
         function table_running() {
             document.getElementById('table_completed').style.display = "none";
@@ -342,6 +352,8 @@ update: 11/02/2018
             document.getElementById('tab_running').style.background ="#fff7";
             document.getElementById('table_rejected').style.display = "none";
             document.getElementById('tab_rejected').style.background ="#fff4";
+            parent.location.hash = 'tab=running';
+            href = "#tab=running";
         };
         function table_rejected() {
             document.getElementById('table_completed').style.display = "none";
@@ -352,6 +364,20 @@ update: 11/02/2018
             document.getElementById('tab_running').style.background ="#fff4";
             document.getElementById('table_rejected').style.display = "table-row-group";
             document.getElementById('tab_rejected').style.background ="#fff7";
+            parent.location.hash = 'tab=rejected';
+            href = "#tab=rejected";
         };
    </script>
+   <script>
+        var href = window.location.href;
+        if (href.indexOf('completed') > -1 ) {
+            table_completed();
+        } else if (href.indexOf('inQueue') > -1 ) {
+            table_inQueue();
+        } else if (href.indexOf('running') > -1 ) {
+            table_running();
+        } else if (href.indexOf('rejected') > -1 ) {
+            table_rejected();
+        }
+    </script>
 </section>
