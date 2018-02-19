@@ -43,7 +43,7 @@
 
 	table {
         border-spacing: 3px 1px;
-        border-top: 1px solid #c7354c;
+        border-top: 1px solid #f5d734;
 	}
 
 	body {
@@ -1633,7 +1633,7 @@
 		}
 
 	a {
-		color: #c7354c;
+		color: #f5d734;
 		text-decoration: none;
 	}
 
@@ -2712,7 +2712,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #c7354c;
+			background-color: #d6b60a;
 			color: #ffffff !important;
 		}
 
@@ -2721,7 +2721,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #751625;
+				background-color: #a28e22;
 			}
 
 			input[type="submit"].special:active,
@@ -2771,7 +2771,7 @@
 			top: 0;
 			height: 44px;
 			position: fixed;
-			border-bottom: 1px solid #c7354c;
+			border-bottom: 1px solid #f5d734;
 			padding-top: 10px;
 		}
 
@@ -2784,7 +2784,7 @@
 		z-index: 10001;
 		height: 44px;
 		padding-top: 10px;
-		border-bottom: 1px solid #c7354c;
+		border-bottom: 1px solid #f5d734;
 	}
 	
 	#header .rightHead {
@@ -3152,7 +3152,7 @@
 	}
 	
 	#footer .icons a:hover {
-		color: #c7354c;
+		color: #f5d734;
 		text-decoration: none;
 		transition: color 0.2s ease-in-out;
 	}
