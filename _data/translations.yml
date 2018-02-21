@@ -49,7 +49,8 @@ lang:
         buildsinqueue: المنتظرة
         buildsrunning: الجارية
         buildsrejected: المرفوضة
-
+        suppliant: Suppliant
+        
         # unsupported_devices
         ud_content: "
         حتي لو كنا خبراء، فإن التعامل مع اﻷجهزة التى لا نملكها ليس بهذه السهولة. ولسوء الحظ هناك  بعض المعايير التي تجعل من اﻷجهزة غير مدعومة من قبلنا.
@@ -110,6 +111,7 @@ lang:
         buildsinqueue: Builds in queue
         buildsrunning: Running builds
         buildsrejected: Rejected builds
+        suppliant: Suppliant
 
         # unsupported_devices
         ud_content: "
@@ -171,6 +173,7 @@ lang:
         buildsinqueue: Builds in queue
         buildsrunning: Running builds
         buildsrejected: Rejected builds
+        suppliant: Suppliant
 
         # unsupported_devices
         ud_content: "
@@ -232,6 +235,7 @@ lang:
         buildsinqueue: Builds in queue
         buildsrunning: Running builds
         buildsrejected: Rejected builds
+        suppliant: Suppliant
 
         # unsupported_devices
         ud_content: "
@@ -293,6 +297,7 @@ lang:
         buildsinqueue: Kuyruktaki yapılar
         buildsrunning: İşlemdeki yapılar
         buildsrejected: Reddedilen yapılar
+        suppliant: İstekte bulunan
 
         # unsupported_devices
         ud_content: "

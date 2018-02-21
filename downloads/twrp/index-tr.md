@@ -34,6 +34,7 @@ update: 11/02/2018
                   <th>{{translate.codename}}</th>
                   <th>{{translate.maintainer}}</th>
                   <th>{{translate.dateadded}}</th>
+                  <th>{{translate.suppliant}}</th>
                   <th>{{translate.downloadlink}}</th>
                </tr>
                <script>
@@ -50,6 +51,7 @@ update: 11/02/2018
                       content+='<th>{{translate.codename}}</th>'
                       content+='<th>{{translate.maintainer}}</th>'
                       content+='<th>{{translate.dateadded}}</th>'
+                      content+='<th>{{translate.suppliant}}</th>'
                       content+='<th>{{translate.downloadlink}}</th>'
                       content+='</tr>'
 
@@ -59,9 +61,10 @@ update: 11/02/2018
                         var brand=val.brand;
                         var model=val.model;
                         var codename=val.codeName;
-                        var date=val.date;
-                        var url=val.url;
                         var maintainer=val.developerEmail;
+                        var date=val.date;
+                        var suppliant=val.email;
+                        var url=val.url;
                         var body = document.getElementsByTagName("body")[0];
                         content+='<tr>'
                         content +='<td class="count">'+count+'</td>'
@@ -70,6 +73,7 @@ update: 11/02/2018
                         content +='<td>'+codename+'</td>'
                         content +='<td class="maintainer">'+maintainer+'</td>'
                         content +='<td>'+date+'</td>'
+                        content+='<td>'+suppliant+'</td>'
                         content+='<td><a href='+url+' target="_blank"> {{translate.download}} </a></td>'
                         content+='</tr>'
                       });
