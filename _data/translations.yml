@@ -105,13 +105,13 @@ lang:
         downloadlink: Odkaz ke stažení
         clicktoredirect: "<a id='download' class='button special'>Klikněte sem</a> pro přesměrování pokud nejste automaticky přesměrován."
         copyright: Jít na domovskou stránku.
-        rejector: Rejector
-        note: Note
-        buildscompleted: Completed builds
-        buildsinqueue: Builds in queue
-        buildsrunning: Running builds
-        buildsrejected: Rejected builds
-        suppliant: Suppliant
+        rejector: Rejektor
+        note: Poznámka
+        buildscompleted: Dokončené sestavy
+        buildsinqueue: Sestavy ve frontě
+        buildsrunning: Běžící sestavy
+        buildsrejected: Zamítnuté sestavy
+        suppliant: Prosebník
 
         # unsupported_devices
         ud_content: "
