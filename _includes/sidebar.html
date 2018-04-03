@@ -1,0 +1,81 @@
+{% assign translate = site.data.translations.lang[page.lang] %}
+
+<div id="sidebar" style="border-right: 1px solid white;">
+    <div class="inner">
+
+        <!-- Search -->
+        <!--
+            <section id="search" class="alt">
+                <form method="post" action="#">
+                    <input type="text" name="query" id="query" placeholder="Search" />
+                </form>
+            </section>
+        -->
+
+        <!-- Menu -->
+            <nav id="menu">
+                <header class="major">
+                    <h2><img src="/images/twrpBuilder_title.png" style="width: 100%"/></h2>
+                </header>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/downloads/twrp">TWRP Builder Downloads</a></li>
+                    <li>
+                        <span class="opener">{{translate.locale}}</span>
+                        <ul>
+                            {% for menu in site.data.translations.lang %}
+                            <a href="/{% unless menu[0] == 'English' %}{{menu[0] | replace: 'عربى','ar' | replace: 'Češka','cs' | replace: 'Français','fr' | replace: 'Türkçe','tr'}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/' | remove: 'ar/' | remove: 'fr/' | remove: 'cs/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- Section 
+            <section>
+                <header class="major">
+                    <h2>Ante interdum</h2>
+                </header>
+                <div class="mini-posts">
+                    <article>
+                        <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    </article>
+                    <article>
+                        <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    </article>
+                    <article>
+                        <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    </article>
+                </div>
+                <ul class="actions">
+                    <li><a href="#" class="button">More</a></li>
+                </ul>
+            </section> -->
+
+        <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Get in touch</h2>
+                </header>
+                <ul class="contact">
+                    <li class="fa-envelope"><a href="mailto:twrpbuilder21@gmail.com">twrpbuilder21@gmail.com</a></li>
+                    <li class="fa-telegram"><a href="#">Telegram</a></li>
+                    <li class="fa-github" style="color: #fff; font-weight: 100; word-spacing: 3px"><script async defer src="https://buttons.github.io/buttons.js"></script> <a class="github-button" href="https://github.com/TWRPBuilder/TWRPBuilder" data-icon="octicon-star" data-show-count="true" aria-label="Star TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Star</a> or <a class="github-button" href="https://github.com/TWRPBuilder/TWRPBuilder/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Fork</a>
+                    </li>
+                </ul>
+            </section>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div>
+                    <p class="copyright" style="margin: 0">&copy; TWRP Builder <i>2018</i>.</p>
+                    <p class="copyright">All rights reserved.</p>
+                    {%if page.update%}<p class="info"><em>{{translate.pageupdate"}} {{page.update}}</em></p>{%endif%}
+                </div>
+            </footer>
+
+    </div>
+</div>

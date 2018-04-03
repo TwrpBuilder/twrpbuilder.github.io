@@ -1,0 +1,90 @@
+<html>
+
+    <title>Builds Completed</title>
+    
+    <head>
+        <style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+</style>
+
+    </head>
+    
+<body>
+    
+    <h1 align="center">Running Builds</h1>
+    
+     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <script src="/login/index.js"></script>
+
+    <table id="table" style="width:100%">
+    <tr>
+        <th>Date</th>
+        <th>Email</th>
+        <th>Uid</th>
+        <th>Brand</th>
+        <th>Board</th>
+        <th>Model</th>
+    </tr>
+        
+        <script>
+        var userDataRef = firebase.database().ref("RunningBuild").orderByKey();
+var button = document.createElement("button");
+button.innerHTML = "Do Something";
+
+var td_email ='';
+var td_uid ='';
+var td_brand ='';
+var td_board ='';
+var td_model ='';
+
+userDataRef.once("value").then(function(snapshot) {
+    var content='';
+    content+='<tr>'
+content+='<th>Date</th>'
+content+='<th>Email</th>'
+content+='<th>Uid</th>'
+content+='<th>Brand</th>'
+content+='<th>Board</th>'
+content+='<th>Model</th>'
+content+='<th>Fmc Token</th>'
+content+='</tr>'
+
+  snapshot.forEach(function(data){
+  var val = data.val();
+  var key = val.key;
+  var email_val = val.Email;
+  var uid_val = val.Uid;
+  var brand=val.Brand;
+  var model=val.Model;
+  var fmc=val.FmcToken;
+  var date=val.Date;
+  var board=val.Board;
+      var body = document.getElementsByTagName("body")[0];
+  content+='<tr>'
+  content +='<td>'+date+'</td>'
+  content +='<td>'+email_val+'</td>'
+  content +='<td>'+uid_val+'</td>'
+  content +='<td>'+brand+'</td>'
+  content +='<td>'+board+'</td>'
+  content +='<td>'+model+'</td>'
+ content+='<td>'+fmc+'</td>'
+  content+='</tr>'
+
+            });
+  document.getElementById("table").innerHTML = content;
+  });
+        </script>
+    </table>
+</body>
+</html>

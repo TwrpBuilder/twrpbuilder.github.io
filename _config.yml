@@ -1,0 +1,11 @@
+# Site settings
+name: TWRP Builder
+title: TWRP Builder
+description: "Jekyll produced devices list"
+baseurl: ""
+author: berkantkz
+repository: twrpbuilder/twrpbuilder.github.io
+
+# Build settings
+markdown: kramdown
+permalinks: pretty

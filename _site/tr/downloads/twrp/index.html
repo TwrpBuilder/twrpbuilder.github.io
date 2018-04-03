@@ -1,0 +1,525 @@
+
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>TWRP Builder İndirmeleri | TWRP Builder</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1 style="padding-left: 2%">TWRP Builder İndirmeleri</h1>
+									</header>
+
+                                    <div style="padding: 0 3% 0 3%; margin: auto; margin-bottom: 5%;">
+									   
+<p><em style="color: #bbb">İpucu: Tuş takımınızda <code class="highlighter-rouge">CTRL</code>+<code class="highlighter-rouge">F</code> tuşlarına basın, ardından aygıtınızın modelini/takma adını yazın.</em></p>
+<style> 
+   p {
+   margin: -2em 0 2em 0;
+   }
+</style>
+
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+<script src="/login/index.js"></script>
+
+<!-- Main -->
+<section id="main" class="wrapper" style="padding: 1em 0">
+   <div class="inner">
+      <!-- Table -->
+      <div class="table-wrapper">
+         <table>
+             <div id="tabs">
+                <button id="tab_completed" onclick="table_completed()">Tamamlanan yapılar</button>
+                <button id="tab_in-queue" onclick="table_inQueue()">Kuyruktaki yapılar</button>
+                <button id="tab_running" onclick="table_running()">İşlemdeki yapılar</button>
+                <button id="tab_rejected" onclick="table_rejected()">Reddedilen yapılar</button>
+             </div>
+            <tbody id="table_completed">
+               <tr>
+                  <th>#</th>
+                  <th>Marka</th>
+                  <th>Model</th>
+                  <th>Takma ad</th>
+                  <th>Geliştirici</th>
+                  <th>Eklenme/Güncellenme tarihi</th>
+                  <th>İstekte bulunan</th>
+                  <th>İndirme bağlantısı</th>
+               </tr>
+               <script>
+                  var userDataRef = firebase.database().ref("Builds").orderByKey();
+                  var button = document.createElement("button");
+                  button.innerHTML = "Do Something";
+                  
+                  userDataRef.once("value").then(function(snapshot) {
+                      var content='';
+                      content+='<tr>'
+                      content+='<th>#</th>'
+                      content+='<th>Marka</th>'
+                      content+='<th>Model</th>'
+                      content+='<th>Takma ad</th>'
+                      content+='<th>Geliştirici</th>'
+                      content+='<th>Eklenme/Güncellenme tarihi</th>'
+                      content+='<th>İstekte bulunan</th>'
+                      content+='<th>İndirme bağlantısı</th>'
+                      content+='</tr>'
+
+                      snapshot.forEach(function(data){
+                        var val = data.val();
+                        var count="";
+                        var brand=val.brand;
+                        var model=val.model;
+                        var codename=val.codeName;
+                        var maintainer=val.developerEmail;
+                        var date=val.date;
+                        var suppliant=val.email;
+                        var url=val.url;
+                        var body = document.getElementsByTagName("body")[0];
+                        content+='<tr>'
+                        content +='<td class="count">'+count+'</td>'
+                        content +='<td>'+brand+'</td>'
+                        content +='<td>'+model+'</td>'
+                        content +='<td>'+codename+'</td>'
+                        content +='<td class="maintainer">'+maintainer+'</td>'
+                        content +='<td>'+date+'</td>'
+                        content+='<td>'+suppliant+'</td>'
+                        content+='<td><a href='+url+' target="_blank"> İndirin </a></td>'
+                        content+='</tr>'
+                      });
+                      
+                      document.getElementById("table_completed").innerHTML = content;
+
+                      $('.maintainer').each(function(i) {
+                          $(this).text($(this).text().replace('@gmail.com',''));
+                          $(this).text($(this).text().replace('kirito9xda','kirito9'));
+                          $(this).text($(this).text().replace('mnshereef','Sheref'));
+                          $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
+                      });
+
+                      $('.count').each(function(i) {
+                        var x = $(this).index()+1;
+                        var y = i + 1;
+                        $(this).text(x+i);
+                        $(this).wrap($('<a>').attr('href','javascript:;'));
+                        $(this).attr('id',x+i);
+
+                        $(this).click(function() {
+                            $('.count').parent().parent().css({'background-color':''});
+                            $(this).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
+                            parent.location.href = href + '#' + y;
+                        });
+                      });
+
+                      if (window.location.href.indexOf("#") > -1) {
+                        var firstDigit = window.location.href[window.location.href.length -2];
+                        var secondDigit = window.location.href[window.location.href.length -1];
+                        var id =  '';
+                        if (firstDigit != '#') {
+                            id = firstDigit + secondDigit
+                        } else {
+                            id = secondDigit 
+                        };
+                        var item = "#"+id;
+                        $(item).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
+                      }
+                  });
+               </script>
+               <style>
+                  .load-bar {
+                  position: relative;
+                  width: 100%;
+                  height: 4px;
+                  background-color: #fdba2c;
+                  }
+                  .bar {
+                  content: "";
+                  display: inline;
+                  position: absolute;
+                  width: 0;
+                  height: 100%;
+                  left: 50%;
+                  text-align: center;
+                  }
+                  .bar:nth-child(1) {
+                  background-color: #da4733;
+                  animation: loading 3s linear infinite;
+                  }
+                  .bar:nth-child(2) {
+                  background-color: #3b78e7;
+                  animation: loading 3s linear 1s infinite;
+                  }
+                  .bar:nth-child(3) {
+                  background-color: #fdba2c;
+                  animation: loading 3s linear 2s infinite;
+                  }
+                  @keyframes loading {
+                  from {left: 50%; width: 0;z-index:100;}
+                  33.3333% {left: 0; width: 100%;z-index: 10;}
+                  to {left: 0; width: 100%;}
+                  }
+               </style>
+            </tbody>
+            
+            <tbody id="table_in-queue">
+               <tr>
+                  <th>#</th>
+                  <th>Marka</th>
+                  <th>Model</th>
+                  <th>Takma ad</th>
+                  <th>Geliştirici</th>
+                  <th>Eklenme/Güncellenme tarihi</th>
+               </tr>
+               <script>
+                  var userDataRef = firebase.database().ref("InQueue").orderByKey();
+                  var button = document.createElement("button");
+                  button.innerHTML = "Do Something";
+                  
+                  userDataRef.once("value").then(function(snapshot) {
+                      var content='';
+                      content+='<tr>'
+                      content+='<th>#</th>'
+                      content+='<th>Marka</th>'
+                      content+='<th>Model</th>'
+                      content+='<th>Takma ad</th>'
+                      content+='<th>Eklenme/Güncellenme tarihi</th>'
+                      content+='</tr>'
+
+                      snapshot.forEach(function(data){
+                        var val = data.val();
+                        var count2="";
+                        var brand=val.brand;
+                        var model=val.model;
+                        var codename=val.codeName;
+                        var date=val.date;
+                        var body = document.getElementsByTagName("body")[0];
+                        content+='<tr>'
+                        content +='<td class="count2">'+count2+'</td>'
+                        content +='<td>'+brand+'</td>'
+                        content +='<td>'+model+'</td>'
+                        content +='<td>'+codename+'</td>'
+                        content +='<td>'+date+'</td>'
+                        content+='</tr>'
+                      });
+                      
+                      document.getElementById("table_in-queue").innerHTML = content;
+
+                      $('.count2').each(function(i) {
+                        var x = $(this).index()+1;
+                        var y = i + 1;
+                        $(this).text(x+i);
+                      });
+                  });
+               </script>
+           </tbody>
+           
+           <tbody id="table_running">
+               <tr>
+                  <th>#</th>
+                  <th>Marka</th>
+                  <th>Model</th>
+                  <th>Takma ad</th>
+                  <th>Geliştirici</th>
+                  <th>Eklenme/Güncellenme tarihi</th>
+               </tr>
+               <script>
+                  var userDataRef = firebase.database().ref("RunningBuild").orderByKey();
+                  var button = document.createElement("button");
+                  button.innerHTML = "Do Something";
+                  
+                  userDataRef.once("value").then(function(snapshot) {
+                      var content='';
+                      content+='<tr>'
+                      content+='<th>#</th>'
+                      content+='<th>Marka</th>'
+                      content+='<th>Model</th>'
+                      content+='<th>Takma ad</th>'
+                      content+='<th>Eklenme/Güncellenme tarihi</th>'
+                      content+='</tr>'
+
+                      snapshot.forEach(function(data){
+                        var val = data.val();
+                        var count4="";
+                        var brand=val.brand;
+                        var model=val.model;
+                        var codename=val.codeName;
+                        var date=val.date;
+                        var body = document.getElementsByTagName("body")[0];
+                        content+='<tr>'
+                        content +='<td class="count4">'+count4+'</td>'
+                        content +='<td>'+brand+'</td>'
+                        content +='<td>'+model+'</td>'
+                        content +='<td>'+codename+'</td>'
+                        content +='<td>'+date+'</td>'
+                        content+='</tr>'
+                      });
+                      
+                      document.getElementById("table_running").innerHTML = content;
+
+                      $('.count4').each(function(i) {
+                        var x = $(this).index()+1;
+                        var y = i + 1;
+                        $(this).text(x+i);
+                      });
+                  });
+               </script>
+           </tbody>
+           
+           <tbody id="table_rejected">
+               <tr>
+                  <th>#</th>
+                  <th>Marka</th>
+                  <th>Model</th>
+                  <th>Eklenme/Güncellenme tarihi</th>
+                  <th>Redden</th>
+                  <th>Not</th>
+               </tr>
+               <script>
+                  var userDataRef = firebase.database().ref("Rejected").orderByKey();
+                  var button = document.createElement("button");
+                  button.innerHTML = "Do Something";
+                  
+                  userDataRef.once("value").then(function(snapshot) {
+                      var content='';
+                      content+='<tr>'
+                      content+='<th>#</th>'
+                      content+='<th>Marka</th>'
+                      content+='<th>Model</th>'
+                      content+='<th>Eklenme/Güncellenme tarihi</th>'
+                      content+='<th>Redden</th>'
+                      content+='<th>Not</th>'
+                      content+='</tr>'
+
+                      snapshot.forEach(function(data){
+                        var val = data.val();
+                        var count3="";
+                        var brand=val.brand;
+                        var model=val.model;
+                        var date=val.date;
+                        var note=val.note;
+                        var rejector=val.rejector;
+                        var body = document.getElementsByTagName("body")[0];
+                        content+='<tr>'
+                        content +='<td class="count3">'+count3+'</td>'
+                        content +='<td>'+brand+'</td>'
+                        content +='<td>'+model+'</td>'
+                        content +='<td>'+date+'</td>'
+                        content +='<td>'+rejector+'</td>'
+                        content +='<td>'+note+'</td>'
+                        content+='</tr>'
+                      });
+                      
+                      document.getElementById("table_rejected").innerHTML = content;
+
+                      $('.count3').each(function(i) {
+                        var x = $(this).index()+1;
+                        var y = i + 1;
+                        $(this).text(x+i);
+                      });
+                  });
+               </script>
+           </tbody>
+         </table>
+         <div class="load-bar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+         </div>
+      </div>
+   </div>
+   <script>
+        var href;
+        function table_completed() {
+            document.getElementById('table_completed').style.display = "table-row-group";
+            document.getElementById('tab_completed').style.background ="#fff7";
+            document.getElementById('table_in-queue').style.display = "none";
+            document.getElementById('tab_in-queue').style.background ="#fff4";
+            document.getElementById('table_running').style.display = "none";
+            document.getElementById('tab_running').style.background ="#fff4";
+            document.getElementById('table_rejected').style.display = "none";
+            document.getElementById('tab_rejected').style.background ="#fff4";
+            if (parent.location.hash.indexOf('completed') > -1) {
+                parent.location.hash = parent.location.hash;
+            } else {
+                parent.location.hash = 'tab=completed';
+            };
+            href = "#tab=completed";
+        };
+        function table_inQueue() {
+            document.getElementById('table_completed').style.display = "none";
+            document.getElementById('tab_completed').style.background ="#fff4";
+            document.getElementById('table_in-queue').style.display = "table-row-group";
+            document.getElementById('tab_in-queue').style.background ="#fff7";
+            document.getElementById('table_running').style.display = "none";
+            document.getElementById('tab_running').style.background ="#fff4";
+            document.getElementById('table_rejected').style.display = "none";
+            document.getElementById('tab_rejected').style.background ="#fff4"
+            parent.location.hash = 'tab=inQueue';
+            href = "#tab=inQueue";
+        };
+        function table_running() {
+            document.getElementById('table_completed').style.display = "none";
+            document.getElementById('tab_completed').style.background ="#fff4";
+            document.getElementById('table_in-queue').style.display = "none";
+            document.getElementById('tab_in-queue').style.background ="#fff4";
+            document.getElementById('table_running').style.display = "table-row-group";
+            document.getElementById('tab_running').style.background ="#fff7";
+            document.getElementById('table_rejected').style.display = "none";
+            document.getElementById('tab_rejected').style.background ="#fff4";
+            parent.location.hash = 'tab=running';
+            href = "#tab=running";
+        };
+        function table_rejected() {
+            document.getElementById('table_completed').style.display = "none";
+            document.getElementById('tab_completed').style.background ="#fff4";
+            document.getElementById('table_in-queue').style.display = "none";
+            document.getElementById('tab_in-queue').style.background ="#fff4";
+            document.getElementById('table_running').style.display = "none";
+            document.getElementById('tab_running').style.background ="#fff4";
+            document.getElementById('table_rejected').style.display = "table-row-group";
+            document.getElementById('tab_rejected').style.background ="#fff7";
+            parent.location.hash = 'tab=rejected';
+            href = "#tab=rejected";
+        };
+   </script>
+   <script>
+        var href = window.location.href;
+        if (href.indexOf('completed') > -1 ) {
+            table_completed();
+        } else if (href.indexOf('inQueue') > -1 ) {
+            table_inQueue();
+        } else if (href.indexOf('running') > -1 ) {
+            table_running();
+        } else if (href.indexOf('rejected') > -1 ) {
+            table_rejected();
+        }
+    </script>
+</section>
+
+                                    </div>
+
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+                
+
+<div id="sidebar" style="border-right: 1px solid white;">
+    <div class="inner">
+
+        <!-- Search -->
+        <!--
+            <section id="search" class="alt">
+                <form method="post" action="#">
+                    <input type="text" name="query" id="query" placeholder="Search" />
+                </form>
+            </section>
+        -->
+
+        <!-- Menu -->
+            <nav id="menu">
+                <header class="major">
+                    <h2><img src="/images/twrpBuilder_title.png" style="width: 100%"/></h2>
+                </header>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                    <li><a href="/downloads/twrp">TWRP Builder Downloads</a></li>
+                    <li>
+                        <span class="opener">Bölge</span>
+                        <ul>
+                            
+                            <a href="/ar/downloads/twrp/" style="margin: 0 5px 0 5px">عربى</a>
+                            <a href="/cs/downloads/twrp/" style="margin: 0 5px 0 5px">ČEŠKA</a>
+                            <a href="/downloads/twrp/" style="margin: 0 5px 0 5px">ENGLISH</a>
+                            <a href="/fr/downloads/twrp/" style="margin: 0 5px 0 5px">FRANÇAIS</a>
+                            <a href="/tr/downloads/twrp/" style="margin: 0 5px 0 5px">TÜRKÇE</a>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+        <!-- Section 
+            <section>
+                <header class="major">
+                    <h2>Ante interdum</h2>
+                </header>
+                <div class="mini-posts">
+                    <article>
+                        <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    </article>
+                    <article>
+                        <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    </article>
+                    <article>
+                        <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
+                        <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
+                    </article>
+                </div>
+                <ul class="actions">
+                    <li><a href="#" class="button">More</a></li>
+                </ul>
+            </section> -->
+
+        <!-- Section -->
+            <section>
+                <header class="major">
+                    <h2>Get in touch</h2>
+                </header>
+                <ul class="contact">
+                    <li class="fa-envelope"><a href="mailto:twrpbuilder21@gmail.com">twrpbuilder21@gmail.com</a></li>
+                    <li class="fa-telegram"><a href="#">Telegram</a></li>
+                    <li class="fa-github" style="color: #fff; font-weight: 100; word-spacing: 3px"><script async defer src="https://buttons.github.io/buttons.js"></script> <a class="github-button" href="https://github.com/TWRPBuilder/TWRPBuilder" data-icon="octicon-star" data-show-count="true" aria-label="Star TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Star</a> or <a class="github-button" href="https://github.com/TWRPBuilder/TWRPBuilder/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork TWRPBuilder/TWRPBuilder on GitHub" style="border-top: solid 0 #000">Fork</a>
+                    </li>
+                </ul>
+            </section>
+
+        <!-- Footer -->
+            <footer id="footer">
+                <div>
+                    <p class="copyright" style="margin: 0">&copy; TWRP Builder <i>2018</i>.</p>
+                    <p class="copyright">All rights reserved.</p>
+                    <p class="info"><em>Bu sayfanın son güncellenme tarihi:  03/04/2018</em></p>
+                </div>
+            </footer>
+
+    </div>
+</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

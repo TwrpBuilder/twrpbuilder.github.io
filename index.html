@@ -1,0 +1,153 @@
+---
+title: TWRP Builder | Homepage
+lang: English
+update: 03/04/2018
+---
+{% assign translate = site.data.translations.lang[page.lang] %}
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>TWRP Builder</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Hi, this is<br>
+                                            <!-- <img src="images/twrpBuilder_title.png" alt="" style="width: 540px; padding-right: 10%"/> -->
+                                            <strong>TWRP Builder</strong>
+                                            </h1>
+											<p>Which means no more TWRPless devices!</p>
+										</header>
+                                            <p>TWRP Builder is a project aiming creating Team Win Recovery Project (TWRP) for the devices not having their own TWRP support yet. Thanks to this project, any device can get the support! Besides, creating request is not something hard. Just download the app, create an account, upload the neccessary files from your device and stay tuned! Once we get the TWRP recovery image ready for your device, you will be notified!</p>
+										<!-- 
+                                        <ul class="actions">
+											<li><a href="#" class="button big">Learn More</a></li>
+										</ul> 
+                                        -->
+									</div>
+                                    <!-- 
+                                    <span class="image object">
+										<img src="https://raw.githubusercontent.com/TwrpBuilder/TwrpBuilder/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" alt="" />
+									</span> 
+                                    -->
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Introduction?</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-github"></span>
+											<div class="content">
+												<h3>We work with GitHub</h3>
+												<p>Everything we do is available on GitHub. If you are curious about what we do, you can examine our project on GitHub. <br><br> <a href="https://github.com/TWRPBuilder" class="button" target="_blank"><i class="fa fa-github"></i> GitHub</a></p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-paper-plane"></span>
+											<div class="content">
+												<h3>Feel free to ask on XDA Forum</h3>
+												<p>We are everytime trying to help you as much as we can. Our forum thread is one of the available places where you can get help. <br><br> <a href="https://forum.xda-developers.com/android/apps-games/twrpbuilder-t3744253" class="button" target="_blank">See our thread</a></p>
+											</div>
+										</article>
+										<article>
+											<span class="icon fa-download"></span>
+											<div class="content">
+												<h3>Download our latest app</h3>
+												<p>Latest is everytime the best! Do not look somewhere else to find it. It is right here! <br><br> <a href="" class="button" target="_blank"><i class="fa fa-download"></i> Download!</a></p>
+											</div>
+										</article>
+									</div>
+								</section>
+                            
+                            <!-- Developers -->
+                            <section>
+									<header class="major">
+										<h2>Developers?</h2>
+									</header>
+									<div id="contributors_inner" class="contributors">
+                                    </div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Blog posts</h2>
+									</header>
+									<div class="posts">
+                                        {% for post in site.posts %}
+                                        {% if post.lang == page.lang %}
+                                            <article>
+                                                {% if post.image %}
+                                                 <a href="#" class="image"><img src="images/{{post.image}}" alt="" /></a>
+                                                {% endif %}
+                                                <h3>{{ post.title }}</h3>
+                                                <p> {{ post.content | strip_html | truncatewords:25 }} </p>
+                                                <ul class="actions align-right">
+                                                    <li><a href="{{post.url}}" class="button small special">Continue reading</a></li>
+                                                </ul>
+                                            </article>
+                                        {% endif %}
+                                        {% endfor %}
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+                {% include sidebar.html %}
+
+			</div>
+
+		<!-- Scripts -->
+            <script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+            <script>
+                $.getJSON("https://api.github.com/orgs/twrpbuilder/members",function(contributors) {
+                    var asset = contributors[0];
+                    var content = '';
+                    $.each(contributors, function(key, val) {
+                    content+='<div class="box person">'
+                    content+='<a href='+val.html_url+' style="border-bottom: 0">'
+                    content+='<div class="image round">'
+                    content+='<img src='+val.avatar_url+' alt="Person 4" height="143px" width="143px"/>'
+                    content+='</div>'
+                    content+='<h3 class="align-center">'+val.login+'</h3>'
+                    content+='</a>'
+                    content+='</div>'
+                    });
+              document.getElementById("contributors_inner").innerHTML =  content;
+              });
+            </script>
+
+	</body>
+</html>
