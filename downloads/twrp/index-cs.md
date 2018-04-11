@@ -34,7 +34,6 @@ update: 15/02/2018
                   <th>{{translate.codename}}</th>
                   <th>{{translate.maintainer}}</th>
                   <th>{{translate.dateadded}}</th>
-                  <th>{{translate.suppliant}}</th>
                   <th>{{translate.downloadlink}}</th>
                </tr>
                <script>
@@ -51,7 +50,6 @@ update: 15/02/2018
                       content+='<th>{{translate.codename}}</th>'
                       content+='<th>{{translate.maintainer}}</th>'
                       content+='<th>{{translate.dateadded}}</th>'
-                      content+='<th>{{translate.suppliant}}</th>'
                       content+='<th>{{translate.downloadlink}}</th>'
                       content+='</tr>'
 
@@ -73,7 +71,6 @@ update: 15/02/2018
                         content +='<td>'+codename+'</td>'
                         content +='<td class="maintainer">'+maintainer+'</td>'
                         content +='<td>'+date+'</td>'
-                        content+='<td>'+suppliant+'</td>'
                         content+='<td><a href='+url+' target="_blank"> {{translate.download}} </a></td>'
                         content+='</tr>'
                       });
