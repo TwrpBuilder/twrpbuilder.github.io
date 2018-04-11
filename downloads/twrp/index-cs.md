@@ -294,7 +294,7 @@ update: 15/02/2018
                         content +='<td>'+brand+'</td>'
                         content +='<td>'+model+'</td>'
                         content +='<td>'+date+'</td>'
-                        content +='<td>'+rejector+'</td>'
+                        content +='<td class="rejector">'+rejector+'</td>'
                         content +='<td>'+note+'</td>'
                         content+='</tr>'
                       });
@@ -305,6 +305,14 @@ update: 15/02/2018
                         var x = $(this).index()+1;
                         var y = i + 1;
                         $(this).text(x+i);
+                      });
+                      
+                      $('.rejector').each(function(i) {
+                          $(this).text($(this).text().replace('@gmail.com',''));
+                          $(this).text($(this).text().replace('kirito9xda','kirito9'));
+                          $(this).text($(this).text().replace('mnshereef','Sheref'));
+                          $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
+                          $(this).text($(this).text().replace('seanhoyt963','deadman96385'));
                       });
                   });
                </script>
