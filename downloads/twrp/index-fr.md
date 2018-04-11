@@ -102,13 +102,16 @@ update: 11/02/2018
                       });
 
                       if (window.location.href.indexOf("#") > -1) {
-                        var firstDigit = window.location.href[window.location.href.length -2];
-                        var secondDigit = window.location.href[window.location.href.length -1];
+                        var firstDigit = window.location.href[window.location.href.length -3];
+                        var secondDigit = window.location.href[window.location.href.length -2];
+                        var thirdDigit = window.location.href[window.location.href.length -1];
                         var id =  '';
-                        if (firstDigit != '#') {
-                            id = firstDigit + secondDigit
+                        if (firstDigit != '#' & secondDigit != '#') {
+                            id = firstDigit + secondDigit + thirdDigit;
+                        } else if (firstDigit == '#' & secondDigit != '#') {
+                            id = secondDigit + thirdDigit;
                         } else {
-                            id = secondDigit 
+                            id = thirdDigit;
                         };
                         var item = "#"+id;
                         $(item).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
