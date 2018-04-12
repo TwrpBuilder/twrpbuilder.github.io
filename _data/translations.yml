@@ -191,6 +191,68 @@ lang:
         pagenotfound: "The page you're looking for<br> couldn't be found."
         gth: Go to home?
 
+    es:
+        # header
+        home: Inicio
+        about: Acerca de
+        downloads: Descargas TWRP Builder
+
+        # footer
+        followus: Síguenos
+        pageupdate: Esta página fue actualizada por última vez el
+        locale: Idioma
+        unsupporteddevicesinformation: Información de dispositivos no admitidos
+
+        # index
+        slogan: Sitio oficial del Proyecto TWRP Builder
+        checkgithub: Mira nuestros repositorios de GitHub
+        projectos: Nuestro proyecto es open-source!
+        visit: Ir
+        checkxda: Mira nuestro hilo en XDA Developers
+        askonxda: ¿Tiene alguna pregunta? ¡Pregúntanos en XDA!
+        dlta: Descargar la app
+        needlatest: ¿Necesita la última versión? ¡Consiguelo aqui!
+        download: Descargar
+        contributors: Colaboradores
+        contributingtoproject: Personas que contribuyen al proyecto
+        about: Acerca de
+        aboutdesc: TWRP Builder es un proyecto que tiene como objetivo crear Team Win Recovery Project (TWRP) para los dispositivos que aún no cuentan con soporte Oficial departe de TWRP. <br> <br> Con nuestro proyecto, TWRP se creará para su dispositivo. Descargue nuestra aplicación, cree una cuenta, cargue los archivos necesarios de su dispositivo y ¡mantenga la calma! Una vez que tengamos preparada la imagen de recuperación TWRP para su dispositivo, se lo notificaremos.
+        dlnow: Descargar ahora!
+
+        # TWRP Builder Downloads
+        hint: "Consejo: Use ```CTRL```+```F``` y escribe tu modelo/nombre clave."
+        brand: Marca
+        model: Modelo
+        codename: Nombre clave
+        maintainer: Mantenedor
+        dateadded: Fecha añadido/actualizado
+        downloadlink: link de Descarga
+        clicktoredirect: "<a id='download' class='button special'>Clic aquí</a> para redirigir si el enlace no funciona automáticamente."
+        copyright: Ir a la página de Inicio.
+        rejector: Rechazado por
+        note: Nota
+        buildscompleted: Compilaciones terminadas
+        buildsinqueue: Compilaciones en cola
+        buildsrunning: Running builds
+        buildsrejected: Compilaciones rechazadas
+        suppliant: Suplicante
+
+        # unsupported_devices
+        ud_content: "
+        Incluso si tenemos experiencia, lidiar con dispositivos que no nos pertenecen no es tan fácil. Lamentablemente, existen criterios específicos que indican el tipo de dispositivos que no podemos admitir.
+
+        Eche un vistazo a los criterios para dispositivos no compatibles a continuación:
+
+        * Procesadores MT65xx
+
+        * Dispositivos que tienen menos espacio que 12 <em>megabytes</em> en la partición de recovery"
+
+        # 404.md
+        error404: ERROR 404
+        sww: Algo salió mal
+        pagenotfound: "La página que estás buscando <br> no se pudo encontrar."
+        gth: Ir a Inicio?
+
     fr:
         # header
         home: Accueil
@@ -253,6 +315,7 @@ lang:
         pagenotfound: "La page que vous recherchez<br> n'a pas été trouvée."
         gth: Retourner a l'accueil?
         
+    
     tr:
         # header
         home: Ana Sayfa
