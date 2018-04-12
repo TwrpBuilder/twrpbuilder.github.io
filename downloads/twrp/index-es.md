@@ -34,7 +34,6 @@ update: 11/04/2018
                   <th>{{translate.codename}}</th>
                   <th>{{translate.maintainer}}</th>
                   <th>{{translate.dateadded}}</th>
-                  <th>{{translate.suppliant}}</th>
                   <th>{{translate.downloadlink}}</th>
                </tr>
                <script>
@@ -51,7 +50,6 @@ update: 11/04/2018
                       content+='<th>{{translate.codename}}</th>'
                       content+='<th>{{translate.maintainer}}</th>'
                       content+='<th>{{translate.dateadded}}</th>'
-                      content+='<th>{{translate.suppliant}}</th>'
                       content+='<th>{{translate.downloadlink}}</th>'
                       content+='</tr>'
 
@@ -73,7 +71,6 @@ update: 11/04/2018
                         content +='<td>'+codename+'</td>'
                         content +='<td class="maintainer">'+maintainer+'</td>'
                         content +='<td>'+date+'</td>'
-                        content+='<td>'+suppliant+'</td>'
                         content+='<td><a href='+url+' target="_blank"> {{translate.download}} </a></td>'
                         content+='</tr>'
                       });
@@ -102,13 +99,16 @@ update: 11/04/2018
                       });
 
                       if (window.location.href.indexOf("#") > -1) {
-                        var firstDigit = window.location.href[window.location.href.length -2];
-                        var secondDigit = window.location.href[window.location.href.length -1];
+                        var firstDigit = window.location.href[window.location.href.length -3];
+                        var secondDigit = window.location.href[window.location.href.length -2];
+                        var thirdDigit = window.location.href[window.location.href.length -1];
                         var id =  '';
-                        if (firstDigit != '#') {
-                            id = firstDigit + secondDigit
+                        if (firstDigit != '#' & secondDigit != '#') {
+                            id = firstDigit + secondDigit + thirdDigit;
+                        } else if (firstDigit == '#' & secondDigit != '#') {
+                            id = secondDigit + thirdDigit;
                         } else {
-                            id = secondDigit 
+                            id = thirdDigit;
                         };
                         var item = "#"+id;
                         $(item).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
@@ -294,7 +294,7 @@ update: 11/04/2018
                         content +='<td>'+brand+'</td>'
                         content +='<td>'+model+'</td>'
                         content +='<td>'+date+'</td>'
-                        content +='<td>'+rejector+'</td>'
+                        content +='<td class="rejector">'+rejector+'</td>'
                         content +='<td>'+note+'</td>'
                         content+='</tr>'
                       });
@@ -305,6 +305,14 @@ update: 11/04/2018
                         var x = $(this).index()+1;
                         var y = i + 1;
                         $(this).text(x+i);
+                      });
+                      
+                      $('.rejector').each(function(i) {
+                          $(this).text($(this).text().replace('@gmail.com',''));
+                          $(this).text($(this).text().replace('kirito9xda','kirito9'));
+                          $(this).text($(this).text().replace('mnshereef','Sheref'));
+                          $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
+                          $(this).text($(this).text().replace('seanhoyt963','deadman96385'));
                       });
                   });
                </script>
