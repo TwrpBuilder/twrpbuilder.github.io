@@ -1,0 +1,30 @@
+---
+title: Descargar App TWRP Builder
+lang: es
+permalink: es/downloads/app/
+update: 11/04/2018
+---
+{% assign translate = site.data.translations.lang[page.lang] %}
+<html>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+        <script>
+            function GetLatestReleaseInfo() {
+$.getJSON("https://api.github.com/repos/TwrpBuilder/TwrpBuilder/releases/latest").done(function(release) {
+var asset = release.assets[0];
+document.getElementById("download").setAttribute("href", asset.browser_download_url); 
+window.location=asset.browser_download_url;
+console.log(asset.browser_download_url); 
+
+});
+}
+
+GetLatestReleaseInfo();
+
+            </script>
+            
+            {{translate.clicktoredirect}}
+			<p style='position: absolute; bottom: 0; left: 10'><em>&copy; TWRP Builder |   <a href="{%unless page.lang == 'en'%}/{{page.lang}}{%endunless%}/">{{translate.copyright}}</a></em></p>
+			<h4>{{translate.locale}}: {% for menu in site.data.translations.lang %}<a href="/{% unless menu[0] == 'en' %}{{menu[0]}}/{%endunless%}{{page.url | replace_first: '/','' | remove: 'tr/' | remove: 'ar/' | remove: 'fr/'}}" style="margin: 0 5px 0 5px">{{ menu[0] | upcase}}</a>{% endfor %} </h4>
+    </body>
+</html>

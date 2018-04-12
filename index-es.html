@@ -1,0 +1,101 @@
+---
+layout: index
+title: TWRP Builder
+lang: es
+permalink: /es/
+update: 11/04/2018
+---
+{% assign translate = site.data.translations.lang[page.lang] %}
+<!-- Banner -->
+			<section id="banner">
+				<img style="padding: 0px 0px; display: none"></img><br>
+				<div class="bannerimg"></div>
+				<p>{{translate.slogan}}</p>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="wrapper">
+				<div class="inner">
+					<div class="flex flex-3">
+						<article>
+							<header>
+								<h3>{{translate.checkgithub}}</h3>
+							</header>
+							<p>{{translate.projectos}}</p>
+							<footer>
+								<a href="https://github.com/TwrpBuilder/TwrpBuilder" class="button special">{{translate.visit}}</a>
+							</footer>
+						</article>
+						<article>
+							<header>
+								<h3>{{translate.checkxda}}</h3>
+							</header>
+							<p>{{translate.askonxda}}</p>
+							<footer>
+								<a href="https://forum.xda-developers.com/android/apps-games/twrpbuilder-t3744253" class="button special">{{translate.visit}}</a>
+							</footer>
+						</article>
+						<article id="article_download">
+							<header>
+								<h3>{{translate.dlta}}</h3>
+							</header>
+							<p>{{translate.needlatest}}</p>
+							<footer>
+									<script>
+											function GetLatestReleaseInfo() {
+				  $.getJSON("https://api.github.com/repos/TwrpBuilder/TwrpBuilder/releases/latest").done(function(release) {
+					var asset = release.assets[0];
+					document.getElementById("download").setAttribute("href", asset.browser_download_url); 
+				  });
+				}
+				
+				GetLatestReleaseInfo();
+				
+											</script>
+								<a id="download" class="button special">{{translate.download}}</a>
+							</footer>
+					</article>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style1 special">
+				<div class="inner">
+					<header>
+						<h2>{{translate.contributors}}</h2>
+						<p>{{translate.contributingtoproject}}</p>
+					</header>
+					<div id="contributors_inner" class="flex flex-4">
+						<script>
+							$.getJSON("https://api.github.com/orgs/twrpbuilder/members",function(contributors) {
+								var asset = contributors[0];
+								var content = '';
+								$.each(contributors, function(key, val) {
+								content+='<div class="box person">'
+								content+='<a href='+val.html_url+'>'
+								content+='<div class="image round">'
+								content+='<img src='+val.avatar_url+' alt="Person 4" height="143px" width="143px"/>'
+								content+='</div>'
+								content+='<h3>'+val.login+'</h3>'
+								content+='</a>'
+								content+='</div>'
+								});
+						  document.getElementById("contributors_inner").innerHTML =  content;
+						  });
+						</script>
+					</div>
+				</div>
+			</section>
+
+		<!-- about -->
+			<section id="about" class="wrapper special">
+				<div class="inner">
+					<header class="align-center">
+						<h2>{{translate.about}}</h2>
+						<p></p>
+					</header>
+					<h3>{{translate.aboutdesc}}</h3>
+					<a href="#article_download">{{translate.dlnow}}</a>
+				</div>
+			</section>
