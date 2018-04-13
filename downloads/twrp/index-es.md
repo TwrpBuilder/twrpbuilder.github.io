@@ -53,8 +53,9 @@ update: 11/04/2018
                       content+='<th>{{translate.downloadlink}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count="";
                         var brand=val.brand;
                         var model=val.model;
@@ -82,6 +83,7 @@ update: 11/04/2018
                           $(this).text($(this).text().replace('kirito9xda','kirito9'));
                           $(this).text($(this).text().replace('mnshereef','Sheref'));
                           $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
+                          $(this).text($(this).text().replace('sk2812283','Surendrajat'));
                       });
 
                       $('.count').each(function(i) {
@@ -175,8 +177,9 @@ update: 11/04/2018
                       content+='<th>{{translate.dateadded}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count2="";
                         var brand=val.brand;
                         var model=val.model;
@@ -227,8 +230,9 @@ update: 11/04/2018
                       content+='<th>{{translate.dateadded}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count4="";
                         var brand=val.brand;
                         var model=val.model;
@@ -280,8 +284,9 @@ update: 11/04/2018
                       content+='<th>{{translate.note}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count3="";
                         var brand=val.brand;
                         var model=val.model;
@@ -312,6 +317,7 @@ update: 11/04/2018
                           $(this).text($(this).text().replace('kirito9xda','kirito9'));
                           $(this).text($(this).text().replace('mnshereef','Sheref'));
                           $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
+                          $(this).text($(this).text().replace('sk2812283','Surendrajat'));
                           $(this).text($(this).text().replace('seanhoyt963','deadman96385'));
                       });
                   });
