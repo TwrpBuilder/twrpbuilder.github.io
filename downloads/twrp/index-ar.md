@@ -87,6 +87,7 @@ update: 11/02/2018
                       });
 
                       $('.count').each(function(i) {
+                        i = snapshot.length - i - 1;
                         var x = $(this).index()+1;
                         var y = i + 1;
                         $(this).text(x+i);
