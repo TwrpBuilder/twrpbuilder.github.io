@@ -53,8 +53,9 @@ update: 11/04/2018
                       content+='<th>{{translate.downloadlink}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count="";
                         var brand=val.brand;
                         var model=val.model;
@@ -175,8 +176,9 @@ update: 11/04/2018
                       content+='<th>{{translate.dateadded}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count2="";
                         var brand=val.brand;
                         var model=val.model;
@@ -227,8 +229,9 @@ update: 11/04/2018
                       content+='<th>{{translate.dateadded}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count4="";
                         var brand=val.brand;
                         var model=val.model;
@@ -280,8 +283,9 @@ update: 11/04/2018
                       content+='<th>{{translate.note}}</th>'
                       content+='</tr>'
 
-                      snapshot.forEach(function(data){
-                        var val = data.val();
+                      snapshot = reverseSnapshot(snapshot);
+
+                      snapshot.forEach(function(val){
                         var count3="";
                         var brand=val.brand;
                         var model=val.model;

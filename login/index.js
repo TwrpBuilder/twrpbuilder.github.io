@@ -69,3 +69,15 @@ function register(){
 function logout(){
   firebase.auth().signOut();
 }
+
+// reverse the firebase ref snapshot
+function reverseSnapshot(snap){
+
+  var reverseSnap = [];
+  snap.forEach(function(data){
+    var val = data.val();
+    reverseSnap.push(val)
+  });
+
+  return reverseSnap.reverse();
+}
