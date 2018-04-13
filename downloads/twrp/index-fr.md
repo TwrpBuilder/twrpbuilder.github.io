@@ -83,6 +83,7 @@ update: 11/02/2018
                           $(this).text($(this).text().replace('kirito9xda','kirito9'));
                           $(this).text($(this).text().replace('mnshereef','Sheref'));
                           $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
+                          $(this).text($(this).text().replace('sk2812283','Surendrajat'));
                       });
 
                       $('.count').each(function(i) {
@@ -316,6 +317,7 @@ update: 11/02/2018
                           $(this).text($(this).text().replace('kirito9xda','kirito9'));
                           $(this).text($(this).text().replace('mnshereef','Sheref'));
                           $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
+                          $(this).text($(this).text().replace('sk2812283','Surendrajat'));
                           $(this).text($(this).text().replace('seanhoyt963','deadman96385'));
                       });
                   });
