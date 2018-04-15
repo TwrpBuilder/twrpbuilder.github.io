@@ -1,7 +1,7 @@
 # Site settings
 name: TWRP Builder
 title: TWRP Builder
-description: "Jekyll produced devices list"
+description: "Jekyll based web site"
 baseurl: ""
 author: berkantkz
 repository: twrpbuilder/twrpbuilder.github.io
