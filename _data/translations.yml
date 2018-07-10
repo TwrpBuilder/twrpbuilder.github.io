@@ -16,7 +16,8 @@ lang:
         pageupdate: آخر تحديث لهذه الصفحة فى
         locale: اللغة
         unsupporteddevicesinformation: معلومات اﻷجهزة الغير مدعومة
-
+        customizedfordesktop: This web site is customized for desktop devices. Please do not complain us about issues in mobile devices.
+        
         # index
         slogan: الموقع الرسمي لمشروع صانع ريكفري TWRP
         checkgithub: تفقد مستودعاتنا على موقع GitHub
@@ -78,6 +79,7 @@ lang:
         pageupdate: Tato stránka byla aktualizována
         locale: Lokalizace
         unsupporteddevicesinformation: Informace o nepodporovaných zařízeních
+        customizedfordesktop: This web site is customized for desktop devices. Please do not complain us about issues in mobile devices.
 
         # index
         slogan: Oficiální stránka projektu TWRP Builder
@@ -140,6 +142,7 @@ lang:
         pageupdate: This page was last updated on
         locale: Locale
         unsupporteddevicesinformation: Unsupported devices information
+        customizedfordesktop: This web site is customized for desktop devices. Please do not complain us about issues in mobile devices.
 
         # index
         slogan: Official site of the  TWRP Builder Project
@@ -196,6 +199,7 @@ lang:
         home: Inicio
         about: Acerca de
         downloads: Descargas TWRP Builder
+        customizedfordesktop: This web site is customized for desktop devices. Please do not complain us about issues in mobile devices.
 
         # footer
         followus: Síguenos
@@ -264,6 +268,7 @@ lang:
         pageupdate: Cette page a été mise à jour pour la dernière fois le
         locale: Langues
         unsupporteddevicesinformation: Informations sur les appareils non supportés
+        customizedfordesktop: This web site is customized for desktop devices. Please do not complain us about issues in mobile devices.
 
         # index
         slogan: Site officiel du TWRP Builder Project
@@ -327,6 +332,7 @@ lang:
         pageupdate: "Bu sayfanın son güncellenme tarihi: "
         locale: Bölge
         unsupporteddevicesinformation: Desteklenmeyen aygıtlar hakkında
+        customizedfordesktop: Bu web sayfası, masaüstü aygıtlar için özelleştirilmiştir. Lütfen mobil aygıtlardaki hatalar hakkında bize şikayette bulunmayın.
 
         # index
         slogan: TWRP Builder Projesinin resmî sitesi.
