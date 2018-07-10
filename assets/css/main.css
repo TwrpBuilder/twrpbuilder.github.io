@@ -2185,7 +2185,7 @@
 	
 	.box {
 		border: solid 1px #dbdbdb;
-		padding: 1.5em;
+		padding: 0.5em;
 	}
 
 		.box > :last-child,
@@ -2202,7 +2202,7 @@
 
 		.box.person {
 			border: solid 1px rgba(255, 255, 255, 0.25);
-			margin: 2em 1em;
+			margin: 1em 0.5em;
 		}
 
 			.box.person h3 {
