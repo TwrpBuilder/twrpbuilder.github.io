@@ -20,6 +20,19 @@
 		<meta property="og:image" content="/assets/images/logo.png" />
 		
 		<script src="/assets/js/twrpbuilder.js"></script>
+		{% if page.lang == 'ar' %}
+		<style>
+			#header .rightHead {
+				left: 0;
+			}
+		</style>
+		{% else %}
+		<style>
+			#header .rightHead {
+				right: 0;
+			}
+		</style>
+		{% endif %}
 	</head>
 	<body class="subpage">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
