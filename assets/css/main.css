@@ -2797,8 +2797,7 @@
 	}
 	
 	#header .rightHead {
-		position: absolute; 
-		right: 0; 
+		position: absolute;
 		top: 5px; 
 		text-align:right;
 	}
@@ -3236,4 +3235,8 @@
 			transition: color 0.2s ease-in-out;
 		}
 
+	}
+	
+	#two {
+		direction: ltr;
 	}
