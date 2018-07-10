@@ -6,7 +6,6 @@ permalink: cs/downloads/twrp/
 update: 15/02/2018
 ---
 {% assign translate = site.data.translations.lang[page.lang] %}
-<em style="color: #bbb">{{translate.hint}}</em>
 <style> 
    p {
    margin: -2em 0 2em 0;
@@ -19,7 +18,8 @@ update: 15/02/2018
    <div class="inner">
       <!-- Table -->
       <div class="table-wrapper">
-         <table>
+		<input id="searchForm" onkeyup="doSearch()" placeholder="{{translate.search}}">
+         <table id="table">
              <div id="tabs">
                 <button id="tab_completed" onclick="table_completed()">{{translate.buildscompleted}}</button>
                 <button id="tab_in-queue" onclick="table_inQueue()">{{translate.buildsinqueue}}</button>

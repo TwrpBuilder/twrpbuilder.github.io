@@ -2471,6 +2471,14 @@
 
 /* Table */
 
+	input#searchForm {
+		width: 100%;
+		padding: 0.4%;
+		margin: 1% 0;
+		background: rgba(255, 255, 255, 0.267);
+		color: #fff;
+	}
+
     #tabs {
         display: -webkit-box;
     }

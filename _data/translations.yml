@@ -36,6 +36,7 @@ lang:
 
         # TWRP Builder Downloads
         hint: "تلميح: استخدم الاختصار ```CTRL```+```F``` وقم بكتابة اسم/موديل جهازك لتجد الملف بشكل أسرع."
+        search: You may search here for your device's developer besides its brand/model/codename.
         brand: العلامة التجارية
         model: الموديل
         codename: الاسم الرمزي
@@ -99,6 +100,7 @@ lang:
 
         # TWRP Builder Downloads
         hint: "Nápověda: Stiskněte ```CTRL```+```F``` a zadejte model/kódové označení vašeho zařízení."
+        search: You may search here for your device's developer besides its brand/model/codename.
         brand: Výrobce
         model: Model
         codename: Kódové označení
@@ -162,6 +164,7 @@ lang:
 
         # TWRP Builder Downloads
         hint: "Hint: Use ```CTRL```+```F``` and type your device model/codename."
+        search: You may search here for your device's developer besides its brand/model/codename.
         brand: Brand
         model: Model
         codename: Codename
@@ -225,6 +228,7 @@ lang:
 
         # TWRP Builder Downloads
         hint: "Consejo: Use ```CTRL```+```F``` y escribe tu modelo/nombre clave."
+        search: You may search here for your device's developer besides its brand/model/codename.
         brand: Marca
         model: Modelo
         codename: Nombre clave
@@ -288,6 +292,7 @@ lang:
 
         # TWRP Builder Downloads
         hint: "Indice: Utilisez ```CTRL```+```F``` et tapez le nom de modèle de votre téléphone."
+        search: You may search here for your device's developer besides its brand/model/codename.
         brand: Marque
         model: Modele
         codename: Nom de code
@@ -352,6 +357,7 @@ lang:
 
         # TWRP Builder Downloads
         hint: "İpucu: Tuş takımınızda ```CTRL```+```F``` tuşlarına basın, ardından aygıtınızın modelini/takma adını yazın."
+        search: Burada aygıtınızın marka/model/kod adının yanısıra geliştiricisini de arayabilirsiniz.
         brand: Marka
         model: Model
         codename: Takma ad
