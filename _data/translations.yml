@@ -16,7 +16,7 @@ lang:
         pageupdate: آخر تحديث لهذه الصفحة فى
         locale: اللغة
         unsupporteddevicesinformation: معلومات اﻷجهزة الغير مدعومة
-        customizedfordesktop: This web site is customized for desktop devices. Please do not complain us about issues in mobile devices.
+        customizedfordesktop: هذا الموقع تم تخصيصه للعمل مع أجهزة الكمبيوتر. من فضلك لا تشتكي من وجود مشاكل على اﻷجهزة المحمولة.
         
         # index
         slogan: الموقع الرسمي لمشروع صانع ريكفري TWRP
@@ -36,7 +36,7 @@ lang:
 
         # TWRP Builder Downloads
         hint: "تلميح: استخدم الاختصار ```CTRL```+```F``` وقم بكتابة اسم/موديل جهازك لتجد الملف بشكل أسرع."
-        search: You may search here for your device's developer besides its brand/model/codename.
+        search: يمكنك البحث هنا عن مطور جهاز، إلى جانب البحث عن العلامة التجارية أو الموديل أو الاسم الرمزي.
         brand: العلامة التجارية
         model: الموديل
         codename: الاسم الرمزي
