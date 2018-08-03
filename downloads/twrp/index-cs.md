@@ -115,6 +115,9 @@ update: 15/02/2018
                         };
                         var item = "#"+id;
                         $(item).parent().parent().css('background-color','rgba(197, 218, 4, 0.55)');
+						
+						var distance = $(item).offset().top - 75;
+						window.scrollTo(0, distance);
                       }
                   });
                </script>
