@@ -84,6 +84,7 @@ update: 11/02/2018
                           $(this).text($(this).text().replace('mnshereef','Sheref'));
                           $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
                           $(this).text($(this).text().replace('sk2812283','Surendrajat'));
+                          $(this).text($(this).text().replace('raduc2k17','Dyneteve'));
                       });
 
                       $('.count').each(function(i) {

@@ -323,6 +323,7 @@ update: 11/04/2018
                           $(this).text($(this).text().replace('ahmedhady6','AhmedHadyHassaan'));
                           $(this).text($(this).text().replace('sk2812283','Surendrajat'));
                           $(this).text($(this).text().replace('seanhoyt963','deadman96385'));
+                          $(this).text($(this).text().replace('raduc2k17','Dyneteve'));
                       });
                   });
                </script>
