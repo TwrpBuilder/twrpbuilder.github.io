@@ -269,6 +269,7 @@ update: 11/02/2018
                   <th>#</th>
                   <th>{{translate.brand}}</th>
                   <th>{{translate.model}}</th>
+                  <th>{{translate.codename}}</th>
                   <th>{{translate.dateadded}}</th>
                   <th>{{translate.rejector}}</th>
                   <th>{{translate.note}}</th>
@@ -284,6 +285,7 @@ update: 11/02/2018
                       content+='<th>#</th>'
                       content+='<th>{{translate.brand}}</th>'
                       content+='<th>{{translate.model}}</th>'
+                      content+='<th>{{translate.codename}}</th>'
                       content+='<th>{{translate.dateadded}}</th>'
                       content+='<th>{{translate.rejector}}</th>'
                       content+='<th>{{translate.note}}</th>'
@@ -295,6 +297,7 @@ update: 11/02/2018
                         var count3="";
                         var brand=val.brand;
                         var model=val.model;
+                        var codename=val.codeName;
                         var date=val.date;
                         var note=val.note;
                         var rejector=val.rejector;
@@ -303,6 +306,7 @@ update: 11/02/2018
                         content +='<td class="count3">'+count3+'</td>'
                         content +='<td>'+brand+'</td>'
                         content +='<td>'+model+'</td>'
+                        content +='<td>'+codename+'</td>'
                         content +='<td>'+date+'</td>'
                         content +='<td class="rejector">'+rejector+'</td>'
                         content +='<td>'+note+'</td>'
