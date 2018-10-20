@@ -41,18 +41,7 @@ update: 11/04/2018
 							</header>
 							<p>{{translate.needlatest}}</p>
 							<footer>
-									<script>
-											function GetLatestReleaseInfo() {
-				  $.getJSON("https://api.github.com/repos/TwrpBuilder/TwrpBuilder/releases/latest").done(function(release) {
-					var asset = release.assets[0];
-					document.getElementById("download").setAttribute("href", asset.browser_download_url); 
-				  });
-				}
-				
-				GetLatestReleaseInfo();
-				
-											</script>
-								<a id="download" class="button special">{{translate.download}}</a>
+								<a id="download" href="https://play.google.com/store/apps/details?id=com.github.TwrpBuilderF" target="_blank" class="button special">{{translate.download}}</a>
 							</footer>
 					</article>
 					</div>
